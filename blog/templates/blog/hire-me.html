@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+
+{% block main_head %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/cv-background.css' %}">
+    <meta name="title" content="How about you hire me: An interactive CV">
+    <meta name="description" content="When simple solutions like a LinkedIn profile are just not enough.">
+    <title>Hire me! - An interactive CV</title>
+{% endblock main_head %}
+
+{% block main_content %}
+    <div class="area" style="width: 100vw; padding: 0; margin: 0; height: calc(100vh - 5.75rem)">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+   </div>
+   <div class="context">
+        <div class="text-focus-in">
+            <h1>My Amazing Interactive CV</h1><br>
+            <p class="superduperundertext">This part is under construction. <br>Go to <a href="/contact/" class="linky-link">contacts</a> to reach out to me.</p>
+        </div>
+   </div>
+{% endblock main_content %}

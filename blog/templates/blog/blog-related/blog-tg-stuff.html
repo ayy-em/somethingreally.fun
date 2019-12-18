@@ -1,0 +1,106 @@
+{% extends "blog/blog-related/blog-base.html" %}
+{% block main_head %}
+    <title>Telegram - how do you do it?</title>
+{% endblock main_head %}
+
+{% block main_blog_body %}
+    {% load static %}
+    <div class="row">
+        <div class="col px-0">
+            <h1>Telegram Stuff</h1>
+        </div>
+        <div class="col pr-5" style="text-align: right;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png" style="height: 50px; width: 50px;">
+        </div>
+    </div>
+    <div class="row pr-3 mt-4 mr-3 text-justify">
+        <p>I got really into Telegram bots at some point - you can check these out in the cards below. They're all pretty simple and the code is usually available on Github so
+        you can easily build one yourself. Why do I like these bots so much? Well, they're easy to get up and running, you can use any language you're comfortable with (especially if
+        <a href="code">you read my guide</a>) and once you make one, making the second one is so easy because you know your shit. Anyway, here's some stuff I do on/with Telegram.</p>
+
+        <div class="row my-2"></div>
+        <div class="card mb-1" style="max-width: 70vw;">
+            <div class="row no-gutters py-2">
+                <div class="col-md-4 my-auto" style="text-align: center">
+                    <a href="https://t.me/adam24live" class="card-link-on-image">
+                        <img src="{% static 'blog/xxx_img.png' %}" class="card-img" alt="Amsterdam Live">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <a href="https://t.me/adam24live">
+                        <h5 class="card-title" id="card-title-id">Amsterdam #Live</h5>
+                      </a>
+                    <p class="card-text">As far as channels go, this is my biggest one - I even have a <a href='/amsterdam/adam24live'>page about it.</a> Photos, videos, funny stories and tips about Amsterdam. Russian only, unfortunately.</p>
+                    <p class="card-text"><small class="text-muted"><a href="https://t.me/adam24live">@adam24live</a></small></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-1"></div>
+        <div class="card mb-1" style="max-width: 70vw;">
+            <div class="row no-gutters py-2">
+                <div class="col-md-4 my-auto" style="text-align: center">
+                    <a href="https://t.me/vice_news" class="card-link-on-image">
+                        <img src="{% static 'blog/vice-media.png' %}" class="card-img" alt="Vice News" style="background-color: black; padding: 10px">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <a href="https://t.me/vice_news">
+                        <h5 class="card-title" id="card-title-id">Vice News</h5>
+                      </a>
+                    <p class="card-text">Not a huge fan myself, but my girlfriend likes it, so I made a bot that posts the most interesting articles on Vice every day at 13:00 Amsterdam time. English only, obviously.</p>
+                    <p class="card-text"><small class="text-muted"><a href="https://t.me/vice_news">@vice_news</a></small></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-1"></div>
+        <div class="card mb-3" style="max-width: 70vw;">
+            <div class="row no-gutters py-2">
+                <div class="col-md-4 my-auto" style="text-align: center">
+                    <a href="https://t.me/ayy_maps" class="card-link-on-image">
+                        <img src="{% static 'blog/map_example.jpg' %}" class="card-img" alt="Maps">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <a href="https://t.me/ayy_maps">
+                        <h5 class="card-title" id="card-title-id">Cool Maps</h5>
+                      </a>
+                    <p class="card-text">If you're as obsessed with neat cartography and useless data as I am, subscribe to my Interesting Maps channel. The channel is in Russian but the maps themselves are in English most of the time.</p>
+                    <p class="card-text"><small class="text-muted"><a href="https://t.me/ayy_maps">@ayy_maps</a></small></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="my-3">I also have quite a few bots running there:</p>
+
+        <div class="row my-2"></div>
+        <div class="card" style="max-width: 70vw;">
+            <div class="row no-gutters py-2">
+                <div class="col-md-4 my-auto" style="text-align: center">
+                    <a href="https://t.me/amsweatherbot" class="card-link-on-image">
+                        <img src="{% static 'blog/dog-robot.png' %}" class="card-img" alt="Weather bot">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <a href="https://t.me/adam24live">
+                        <h5 class="card-title" id="card-title-id">Weather Bot</h5>
+                      </a>
+                    <p class="card-text">Weather bot I describe in detail <a href='/code/telegram'>here.</a> Reminders, weather forecasts, a few phrases here and there... Pretty cool bot that also posts Vice to the channel.</p>
+                    <p class="card-text"><small class="text-muted"><a href="https://t.me/amsweatherbot">@AmsWeatherBot</a></small></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row my-5"></div>
+
+    </div>
+{% endblock main_blog_body %}

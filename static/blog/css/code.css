@@ -1,0 +1,167 @@
+/* TIMER - START */
+
+#timertext {
+    margin: 0;
+    padding: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+#timerdiv {
+    margin: 2rem auto;
+    width: fit-content;
+    border: 2px solid #4f4f4f;
+    border-radius: 5px;
+    background-color: #9400D3;
+    color: white;
+}
+
+/* TIMER - END */
+/* RIGHT COLUMN - START */
+
+#content-border-thing {
+    background: #fafafa;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 0.2rem;
+}
+
+#right-code-column {
+    top: -7.45rem;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.wrapper {
+    border: 0.3rem solid transparent;
+    /* you'll never see me again so now who's gonna cry for you*/
+    border-radius: 1.5rem;
+    padding: 0.1rem;
+    text-align: center;
+	background-image: linear-gradient(to top, white, white, white), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+    background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+}
+
+#code-right-title {
+    color: #333333;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+#code-right-title:hover {
+    -webkit-animation: color-change 3s infinite;
+    -moz-animation: color-change 3s infinite;
+    -o-animation: color-change 3s infinite;
+    -ms-animation: color-change 3s infinite;
+    animation: color-change 3s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: #9400D3; }
+    10% { color: #f79533; }
+    20% { color: #f37055; }
+    30% { color: #ef4e7b; }
+    40% { color: #a166ab; }
+    50% { color: #5073b8; }
+    60% { color: #1098ad; }
+    70% { color: #07b39b; }
+    80% { color: #6fba82; }
+    90% { color: #f79533; }
+    100% { color: #efb5ff; }
+}
+@-moz-keyframes color-change {
+    0% { color: #9400D3; }
+    10% { color: #f79533; }
+    20% { color: #f37055; }
+    30% { color: #ef4e7b; }
+    40% { color: #a166ab; }
+    50% { color: #5073b8; }
+    60% { color: #1098ad; }
+    70% { color: #07b39b; }
+    80% { color: #6fba82; }
+    90% { color: #f79533; }
+    100% { color: #efb5ff; }
+}
+@-ms-keyframes color-change {
+    0% { color: #9400D3; }
+    10% { color: #f79533; }
+    20% { color: #f37055; }
+    30% { color: #ef4e7b; }
+    40% { color: #a166ab; }
+    50% { color: #5073b8; }
+    60% { color: #1098ad; }
+    70% { color: #07b39b; }
+    80% { color: #6fba82; }
+    90% { color: #f79533; }
+    100% { color: #efb5ff; }
+}
+@-o-keyframes color-change {
+    0% { color: #9400D3; }
+    10% { color: #f79533; }
+    20% { color: #f37055; }
+    30% { color: #ef4e7b; }
+    40% { color: #a166ab; }
+    50% { color: #5073b8; }
+    60% { color: #1098ad; }
+    70% { color: #07b39b; }
+    80% { color: #6fba82; }
+    90% { color: #f79533; }
+    100% { color: #efb5ff; }
+}
+
+@keyframes color-change {
+    0% { color: #9400D3; }
+    10% { color: #f79533; }
+    20% { color: #f37055; }
+    30% { color: #ef4e7b; }
+    40% { color: #a166ab; }
+    50% { color: #5073b8; }
+    60% { color: #1098ad; }
+    70% { color: #07b39b; }
+    80% { color: #6fba82; }
+    90% { color: #f79533; }
+    100% { color: #333333; }
+}
+
+#code-content-section {
+    overflow: hidden;
+    z-index: 2;
+  --borderWidth: 10px;
+    padding: 0;
+    margin: 0;
+    background: #1D1F20;
+    border-radius: var(--borderWidth);
+}
+
+#code-content-section:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  animation: animatedgradient 10s ease alternate infinite;
+  background-size: 300% 300%;
+  border-radius: calc(1.5 * var(--borderWidth));
+  z-index: -1;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

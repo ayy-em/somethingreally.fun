@@ -1,0 +1,45 @@
+/* ams map */
+
+#ams-map-send-suggestion {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,.05);
+    padding: .5rem 1rem .5rem 1rem;
+    color: #7B68EE;
+    border-color: #333333;
+    transition: color;
+    transition-property: border-bottom-color, border-top-color, border-left-color, border-right-color, background-color;
+    transition-duration: .5s;
+}
+
+#ams-map-send-suggestion:hover {
+    color: #9400D3;
+    border-color: #9400D3;
+    background-color: rgba(148,0,211,.05);
+}
+
+#ams-map-contr {
+    color: #7B68EE;
+    transition: color;
+    transition-duration: .5s;
+}
+
+#ams-map-contr:hover {
+    color: #9400D3;
+    text-decoration: none;
+}
+
+#ams-map-contr:focus {
+    text-decoration: none;
+}
+
+#ams-map-inputGroup-sizing-default {
+    color: #333333;
+}
+
+.ams-map {
+    width: 100%;
+    height: 100%;
+}
+
+/* map over */

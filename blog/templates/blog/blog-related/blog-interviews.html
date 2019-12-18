@@ -1,0 +1,42 @@
+{% extends "blog/blog-related/blog-base.html" %}
+
+{% block main_head %}
+    <title>Interviews and other smart stuff</title>
+{% endblock main_head %}
+
+{% block main_blog_body %}
+    <div class="container-flex">
+        <div class="container-flex">
+            <h1>Interviews and Guest Writer things</h1>
+            <p class="mt-4" style="text-align: justify">
+                This section is a short compilation of various times I gave my "expert" opinion of things, all together in
+                one place, so I can show this stuff to my grandmas and make them proud. Besides, it will be a nice place
+                for me to sit at home and reminisce about the good old days when I was young and had opinions about things
+                that people actually asked me for. Ah, I already feel nostalgic.
+            </p>
+        </div>
+        <div class="card-deck my-5">
+            <div class="card">
+                <a href="https://www.bunq.com/blog/why-bunq-is-the-company-for-me">
+                    {% load static %}
+                    <img class="card-img-top" src="{% static 'blog/blog-stuff/bunq-story.png' %}" alt="bunq logo">
+                    <div class="card-body">
+                      <h5 class="card-title">bunq: our way of doing things</h5>
+                      <p class="card-text mb-4" style="color: #333333">A short article I wrote for bunq, an Amsterdam-based challenger bank, about the key differences between "corporate" and "start-up" culture.</p>
+                      <p class="card-text" style="position: absolute; bottom: 0; left: 0; padding-left: 20px; padding-bottom: 10px; font-style: italic;"><small class="text-muted">English - Posted 22.11.2019</small></p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://iz.ru/890190/anastasiia-chepovskaia/deshevo-i-derzko-pochemu-sotcialnaia-reklama-pytaetsia-zadet-i-oskorbit">
+                    <img class="card-img-top" src="{% static 'blog/blog-stuff/izvestiya-story.png' %}" alt="Izvestiya">
+                    <div class="card-body h-100">
+                      <h5 class="card-title">Izvestiya: Why are PSAs aiming to offend?</h5>
+                      <p class="card-text mb-4" style="color: #333333">An interview I gave Izvestiya, one of Russia's biggest newspapers on the state of state-sponsored advertising. You know, like PSAs against smoking and such.</p>
+                      <p class="card-text" style="position: absolute; bottom: 0; left: 0; padding-left: 20px; padding-bottom: 10px; font-style: italic;"><small class="text-muted">Russian - Posted 20.06.2019</small></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock main_blog_body %}

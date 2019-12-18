@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block main_head %}
+    {% load static %}
+    <meta name="title" content="Code Central: Guides and things">
+    <meta name="description" content="Python, JavaScript, Java: Pick your poison.">
+    {% block code_head %}{% endblock code_head %}
+
+{% endblock main_head %}
+
+{% block main_content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/code.css' %}">
+    <!-- start of nav right column with links thingy-->
+    <main role="main" class="container">
+      <div class="row" id="blogmaincontent">
+        <div class="col-md-10">
+          {% block code_body %}{% endblock code_body %}
+        </div>
+        <div class="col-md-2 d-none d-lg-block pl-5" id="right-code-column">
+          <div class="content-section px-3 py-3" id="code-content-section">
+              <div class="px-2" id="content-border-thing">
+                <div class="span" style="padding-top: 10rem">
+                </div>
+                <div class="wrapper">
+                    <a href="/code/"><h4 class="my-0 pt-3 px-2" id="code-right-title">Code Central</h4></a>
+                    <p class="text-muted m-0 pb-3">Learn amazing stuff</p>
+                </div>
+                <ul class="list-group mt-3">
+                    <a class="list-group-item list-group-item-light" href="/code">Introduction</a>
+                    <a class="list-group-item list-group-item-light" href="/code/how-to-start-coding">How do I start?</a>
+                    <a class="list-group-item list-group-item-light" href="/code/html-css">Frontend Starter Pack</a>
+                    <a class="list-group-item list-group-item-light" href="/code/every-coder-should-know">Must-have tools</a>
+                    <hr class="half-hr-thing"/>
+                    <a class="list-group-item list-group-item-light" href="/code/javascript/intro"><i class="fab fa-js-square"></i> JavaScript</a>
+                    <a class="list-group-item list-group-item-light" href="/code/python/intro"><i class="fab fa-python"></i> Python</a>
+                    <a class="list-group-item list-group-item-light" href="/code/java/intro"><i class="fab fa-java"></i> Java</a>
+                    <hr class="half-hr-thing"/>
+                    <a class="list-group-item list-group-item-light" href="/code/project-ideas">Project Ideas</a>
+                    <a class="list-group-item list-group-item-light" href="/code/useful-links">Useful links</a>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end of nav right column with links thingy-->
+{% endblock main_content %}
+

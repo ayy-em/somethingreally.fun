@@ -1,0 +1,151 @@
+/* Right Column - START */
+
+#right-blog-column {
+    top: -7.45rem;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.content-section {
+    border: 1px solid rgba(51,51,51,0.1);
+}
+
+#right-blog-title {
+    background: #fafafa;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    margin: 0 0 2rem 0;
+}
+
+#right-blog-content {
+    background: url('../blog-stuff/pattern_black.jpg') repeat 0 0;
+    -webkit-animation: bg-scrolling-reverse 90s infinite; /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 90s infinite; /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 90s infinite; /* Opera 12+ */
+    animation: bg-scrolling-reverse 90s infinite; /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    overflow: hidden;
+    z-index: 2;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% { background-position: 512px 512px; }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% { background-position: 512px 512px; }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% { background-position: 512px 512px; }
+}
+@keyframes bg-scrolling-reverse {
+  100% { background-position: 512px 512px; }
+}
+
+/* Right Column - END */
+/* Main (Post collection) - START */
+
+.post-preview {
+    margin: 0 0 1rem 0;
+    padding: 0.75rem;
+    /* background: rgba(68,68,68,0.2); */
+    background: rgba(212,212,212,0.15);
+    border: 1px solid rgba(51,51,51,0.25);
+    border-radius: 0.4rem;
+}
+
+/* Main (Post collection) - END */
+/* POST STUFF - START */
+
+.blog-main-title {
+    margin-bottom: 1rem;
+}
+
+h3.post-title {
+    color: #333333;
+    transition: color;
+    transition-duration: .5s;
+}
+
+h3.post-title:hover {
+    color: #9400D3;
+    text-decoration: none;
+    transition: color;
+    transition-duration: .5s;
+}
+
+p.post-meta {
+    font-style: italic;
+    font-size: small;
+    color: #7B68EE;
+    margin-bottom: 0;
+}
+
+a.page-link {
+    color: #333333;
+    transition: ease;
+    transition-duration: .5s;
+}
+
+a.page-link:hover {
+    background-color: #efb5ff;
+    color: #9400D3;
+}
+
+/* POST STUFF - END */
+/* INTERVIEWS - START */
+.card-img-top {
+    height: 10rem;
+    object-fit: cover;
+    border-bottom: 1px dotted #7c7c7c;
+}
+
+.card {
+    transition: box-shadow 0.5s;
+}
+
+.card:hover {
+    box-shadow:0 0 0.2rem 0.1rem #7B68EE;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+/* INTERVIEWS - END */
+/* CARDS - START */
+
+#card-title-id {
+    transition: color;
+    transition-duration: .5s;
+}
+
+#card-title-id:hover {
+    color: #9400D3;
+    text-decoration: none;
+}
+
+.card-img {
+    max-height: 200px;
+    max-width: 200px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-link-on-image {
+    margin: auto;
+    text-align: center;
+    border: 5px #7B68EE;
+    border-radius: 3px;
+}
+
+/* CARDS - END */

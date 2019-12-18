@@ -1,0 +1,355 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    color: #333333;
+    font-family: 'Istok Web', sans-serif;
+    line-height: 1.75;
+    background: #fafafa;
+}
+
+main.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+main.containertwo {
+    width: auto;
+    min-width: 80vw;
+    display: flex;
+    flex: 1 0 auto;
+}
+
+a {
+    color: #7B68EE;
+    transition: color;
+    transition-duration: .5s;
+}
+
+a:hover {
+    color: #9400D3;
+    text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+.purple-link {
+    color: #7B68EE;
+    transition: color;
+    transition-duration: .3s;
+}
+
+.purple-link:hover {
+    color: #9400D3;
+}
+
+/* HELLO - START */
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* HELLO - END */
+/* LIST GROUP - START */
+
+.list-group-item {
+    color: #333333;
+    transition: background-color;
+    transition-duration: 1s;
+}
+
+.list-group-item:hover {
+    background-color: #efb5ff;
+}
+
+.half-hr-thing {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    text-align: center;
+    max-height: 50%;
+}
+
+/* LIST GROUP - END */
+/* FOOTER - START */
+
+.footer {
+    background-color: #333333;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    box-sizing: border-box;
+    height: 3rem;
+}
+
+.yo-footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color;
+    transition-duration: .5s;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+/* FOOTER - END */
+/* NAVBAR - START */
+
+.navbar {
+    padding: 0.1rem;
+    height: 3rem;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    background: none;
+    color: #f9f9f9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: color;
+    transition-duration: 1s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #9400D3;
+}
+
+#ebuchiilogo {
+    animation: pulse 15s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+  20% {
+      color: #efb5ff;
+  }
+  40% {
+      color: #7B68EE;
+  }
+  50% {
+      color: #9400D3;
+  }
+  60% {
+      color: #7B68EE;
+  }
+  80% {
+      color: #efb5ff;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.toprightimgtext {
+    height: 100%;
+    margin-bottom: 0rem;
+    transition: color;
+    transition-duration: .5s;
+}
+
+.toprightimgtext:hover {
+    color: #9400D3;
+}
+
+#toprightimg {
+    align-content: center;
+    height: 100%;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    font-size: smaller;
+}
+
+#dropdownMenuButton {
+    background-color: transparent;
+    border-color: transparent;
+    transition: color;
+    transition-duration: 1s;
+}
+
+#dropdownMenuButton:hover {
+    color: #9400D3;
+}
+
+.dropdown {
+    width: auto;
+    max-width: 100%;
+}
+
+.dropdown:after {
+    content: none;
+}
+
+.dropdown:focus {
+    outline: none;
+    border: none;
+}
+
+#dropdownMenuButton:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-item {
+    color: #333333;
+    transition: background-color;
+    transition-duration: 1s;
+}
+
+.dropdown-item:hover {
+    background-color: #efb5ff;
+    color: #9400D3;
+}
+
+#dropdownMenuButton:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 330px;
+}
+
+.navbar-brand a {
+    padding: 0rem;
+}
+
+#blogmaincontent {
+    min-height: 100px;
+    height: available;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: #9400D3;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #7B68EE;
+    border-color: #9400D3;
+}
+
+.btn-outline-success:active {
+    color: white;
+    background-color: #7B68EE;
+    border-color: #9400D3;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: white;
+    background-color: #7B68EE;
+    border-color: #9400D3;
+    outline-color: #9400D3;
+}
+
+.btn-outline-success:focus {
+    color: white;
+    background-color: #7B68EE;
+    border-color: #9400D3;
+}
+
+.btn-outline-success:focus-visible {
+    color: white;
+    background-color: #7B68EE;
+    border-color: #9400D3;
+}
+
+/* NAVBAR - END */
+/* SIDENAV - START */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 4rem;
+}
+
+.sidenav a {
+  padding: 1rem 1rem 1rem 2rem;
+  color: #fafafa;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  margin-left: 2rem;
+}
+
+/* SIDENAV - END */
+/* CONTACT - START */
+
+#linkedin-badge-div {
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    text-align: center;
+    padding: 0;
+    width: fit-content;
+    border-color: #303336;
+    border-radius: 0.4rem;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* CONTACT - END */
+
+.content-section {
+    background: #ffffff;
+    position: fixed;
+    padding: 9px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    height: 100%;
+}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main_head %}
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/gradient.css' %}">
+    <meta name="title" content="bunq: Bank of The Free">
+    <meta name="description" content="Help bunq revolutionize the banking industry and enjoy Europe's best bank! It only takes 5 minutes.">
+    <meta property="og:image" content="https://together.bunq.com/public/attachments/4479669e0a509b26a4d22c98e2972c51.png">
+    <meta property="twitter:image" content="https://together.bunq.com/public/attachments/4479669e0a509b26a4d22c98e2972c51.png">
+    <title>bunq it up!</title>
+{% endblock main_head %}
+
+{% block main_content %}
+    <div class="textytext mx-auto mt-5 mb-3">
+        <img src="{% static 'blog/bunq_big_tight.png' %}" alt="bunq" style="max-height: 30vh; max-width: 20vw;">
+        <!--p style="font-size: 4em; margin: 0 0 0 0; vertical-align: bottom">bunq</p>
+        <p style="font-size: 1em; vertical-align: top">Bank of The Free</p-->
+        <br><div style="margin-top: 15rem"></div>
+        Join bunq using my referral link now.<br>You will not regret it.<br>
+
+        <a href="http://www.bunq.com" class="button4">Sign up in 5 minutes</a>
+    <br>
+    </div>
+{% endblock main_content %}
+
+

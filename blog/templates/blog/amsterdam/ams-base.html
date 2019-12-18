@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block main_head %}
+    {% load static %}
+    <meta name="title" content="Amsterdam: Survival Guide, Interactive Map, Stories, Tips and Stuff">
+    <meta property="og:image" content="{% static 'blog/ams/houses.png' %}">
+    <meta name="description" content="Exciting stuff about the best city on Earth. Doesn't matter if you're planning a visit, live here or just like the city, you'll definitely find something interesting.">
+    <title>Amsterdam - The biggest small city</title>
+
+{% endblock main_head %}
+
+{% block main_content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/amsterdam.css' %}">
+    <!-- start of nav right column with links thingy-->
+    <main role="main" class="container mx-auto" style="padding: 3rem 0 2rem">
+      <div class="row mx-0">
+        <div class="col-md-10 pl-1 pr-auto mx-auto">
+          {% block main_blog_body %}{% endblock main_blog_body %}
+        </div>
+        <div class="col-md-2 d-none d-lg-block px-3" id="right-ams-column">
+          <div class="content-section py-3 px-3" id="amsterdamrp">
+            <div class="container d-flex" id="triplexrightsidebardiv">
+                <img src="{% static 'blog/xxx_img.png' %}" alt="XXX" class="triplexrightsidebar mx-auto">
+            </div>
+            <div class="backgroundplaque">
+                <h4 style="text-align: center; padding: 0.1rem; margin: 0">Amsterdam</h4>
+                <p class="text-muted" style="text-align: center; padding: 0.1rem; margin: 0">Smallest big city on Earth</p>
+            </div>
+            <ul class="list-group">
+                <a class="list-group-item list-group-item" href="/amsterdam">Welcome</a>
+                <a class="list-group-item list-group-item" href="/amsterdam/guide">Survival Guide</a>
+                <a class="list-group-item list-group-item" href="/amsterdam/map">Interactive Map</a>
+                <a class="list-group-item list-group-item" href="/amsterdam/stuff">Other fun stuff</a>
+                <hr class="half-hr-thing my-1"/>
+                <a class="list-group-item list-group-item" href="/amsterdam/adam24live">Amsterdam #LIVE</a>
+                <hr class="half-hr-thing my-1"/>
+                <a class="list-group-item list-group-item" href="/amsterdam/contribute">Contribute!</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end of nav right column with links thingy-->
+{% endblock main_content %}

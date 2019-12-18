@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="h-100">
+<head>
+    <!-- GA + GTM -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150671594-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-150671594-1');
+    </script>
+    <script>
+        $('.popover-dismiss').popover({
+        trigger: 'focus'
+        })
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNPXXFV');</script>
+    <!-- End Google Tag Manager -->
+    <!-- End GA + GTM -->
+    <!-- START OF BOOTSTRAP -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/krisa.css' %}">
+    <meta charset="utf-8">
+    <!-- END OF BOOTSTRAP -->
+    <!-- favicon tiem -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'blog/favicon.ico' %}"/>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f36e3b92f9.js" crossorigin="anonymous"></script>
+    <!-- End of Font Awesome -->
+    <title>Full Metal Крыса 2020</title>
+</head>
+
+<body>
+    <!-- GTM (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNPXXFV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End GTM (noscript) -->
+    <main role="main" class="container mx-auto my-auto">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="everythingyo my-auto">
+            <!--div class="row mx-auto mt-5">
+                <p class="fmk mx-auto mb-3">
+                    Full Metal Крыса
+                </p>
+            </div-->
+            <div class="row">
+                <img src="{% static 'blog/fmr.jpg' %}" class="krisa-main-jpg mx-auto" alt="Full Metal Крыса 2020">
+            </div>
+            <div class="row mt-4" id="textrowdiv">
+                <p class="fmk mx-auto my-auto" id="superkrisacountdown">Let's fuckin go</p>
+                <!-- JAVASCRIPT -->
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Dec 31, 2019 16:00:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                  // Get today's date and time
+                  var now = new Date().getTime();
+
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Display the result in the element with id="demo"
+                  document.getElementById("superkrisacountdown").innerHTML = "0 м, " + days + " д, <br> " + hours + " ч, "
+                  + minutes + " м, " + seconds + " с";
+
+                  // If the count down is finished, write some text
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("superkrisacountdown").innerHTML = "Вы еще не там?";
+                  }
+                }, 1000);
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

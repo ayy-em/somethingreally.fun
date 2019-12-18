@@ -1,0 +1,65 @@
+#amsmaincontainer {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.backgroundplaque {
+    background: rgb(255,255,255);
+    border: 2px solid rgba(123,104,238,0.2);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#right-ams-column {
+    top: -7.45rem;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+#triplexrightsidebardiv {
+    margin-top: 5rem;
+    border-width: 5px;
+    border-style: double;
+    border-color: white;
+    background: #333333;
+    padding: 0.2rem 0.2rem 0.5rem 0.2rem;
+}
+
+
+.triplexrightsidebar {
+    width: 10rem;
+    height: 3.56rem;
+    margin: auto;
+}
+
+.list-group-item {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0.1rem;
+}
+
+#amsterdamrp {
+    overflow: hidden;
+    z-index: 2;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 5px;
+    background: url('../ams/houses.png');
+    background-size: auto 100%;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+
+}

@@ -1,0 +1,51 @@
+{% extends "../code-related/code-base.html"%}
+
+{% block code_head %}
+    <title>Add digital clock to your website with JavaScript</title>
+{% endblock code_head %}
+
+
+{% block code_body %}
+    <h1>Adding digital clock to your website</h1>
+    <p class="mt-3">To add a JS clock to your website, you need to solve three main issues.</p>
+    <p style="margin-left: 2rem;">1. Getting the current time.<br>
+    2. Making it show up on your website.<br>
+    3. Configuring it to properly update every second.</p>
+    <p class="mb-3">Assuming you guys have already read my <a href="/code/intro-to-javascript">Intro to JavaScript,</a> you already know that the JS code should be put
+        either in the 'script' tag or saved as a separate file with the '.js' extension. We then add the file to our HTML.</p>
+    <!-- This is a script for embedding gists -->
+    <script src="https://gist.github.com/ayy-em/ae11a5a17e40a416512cf653741485e3.js"></script>
+    <p class="my-3">There it is! The end result should look something like this:</p>
+    {% load static %}
+    <div id="timerdiv">
+        <p id="timertext"></p>
+    </div>
+    <script>
+        var x = setInterval(function() {
+            // get the date first
+            var myDate = new Date();
+            var myDay = myDate.getDay();
+            // then create a list of days of the week
+            var weekday = ['Sunday', 'Monday', 'Tuesday',
+              'Wednesday', 'Thursday', 'Friday', 'Saturday'
+            ];
+            // then make strings that add "0" in front of 1-digit hrs/mins
+            var dayNum = String(myDate.getDate()).padStart(2, '0');
+            var monthNum = String(myDate.getMonth() + 1).padStart(2, '0');
+            var yearFullNum = myDate.getFullYear();
+            // then the same with time
+            var hours = String(myDate.getHours()).padStart(2, '0');
+            var minutes = String(myDate.getMinutes()).padStart(2, '0');
+            var seconds = String(myDate.getSeconds()).padStart(2, '0');
+            // compile two strings
+            var dateString = weekday[myDay] + ", " + dayNum + "." + monthNum + "." + yearFullNum
+            var timeString = hours + " : " + minutes + " : " + seconds
+            // and put the string into the "titletext" HTML element of your website
+            document.getElementById("timertext").innerHTML = (dateString + "<br>" + timeString);
+        }, 1000);
+    </script>
+    <!--img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="{% static 'blog/code/js-clock.png' %}" alt="This is what the end result looks like."-->
+    <p class="mt-3 mb-5">Obviously, the appearance of the timer on your website would depend on the font size, color and style you chose,
+        as well as the alignment and spacing. You can further customize it by switching it to an AM/PM clock, adding and removing elements and such.
+        Don't be afraid to experiment!</p>
+{% endblock code_body %}
