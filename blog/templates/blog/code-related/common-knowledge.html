@@ -1,11 +1,40 @@
 {% extends "../code-related/code-base.html"%}
 
 {% block code_head %}
-    <title>SR.f - Coder's must know stuff</title>
+    {% load static %}
+    <meta name="title" content="Skills and knowledge expected of any coder">
+    <meta name="description" content="Python, JavaScript, Java: Pick your poison.">
+    <meta property="og:image" content="{% static '/blog/code/guy-coding.jpg' %}">
+    <meta property="twitter:image" content="{% static '/blog/code/guy-coding.jpg' %}">
+    <title>Every coder's must-have skills</title>
 {% endblock code_head %}
 
 
 {% block code_body %}
-    <h1>Stuff every coder must know</h1>
-    <p class="mt-3 mb-2">There are a few things every coder should know.</p>
+    <h1>Stuff Every Coder <b>Must</b> Know</h1>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/code.css' %}">
+    <p class="mt-3 mb-1">Frontend or backend, mobile or web, every developer, software engineer and, to an extent,
+        data scientist, is expected to have a lot of "common" knowledge that's just expected of them. Think of it as the
+        new "Microsoft Office"-like starter pack.
+    </p>
+    <img class="coderino-imagerino my-4" src="{% static '/blog/code/guy-coding.jpg' %}" alt="Literally a pic of a guy coding.">
+    <p class="my-2">
+        And even if you can, in theory, get by without them just fine, they still remain extremely valuable skills that
+        are pretty easy to pick up. So, let's get started! Here's the full list:
+    </p>
+    <ul class="mb-3">
+        <li>Version Control (VCS) and Git: push, pull and merge</li>
+        <li>Basic HTML and CSS: a web page structure</li>
+        <li>Databases, Object-relational mapping (ORM) & SQL</li>
+        <li>Environmental variables</li>
+        <li>Bash, terminal, cmd</li>
+        <li>IDEs: VSC, iDEA, PyCharm and others</li>
+        <li>APIs: networking time!</li>
+    </ul>
+    <p class="mt-2 mb-3">
+        I know this seems kind of overwhelming and leaves you with more questions than you previously had, but trust me
+        - given enough time, dedication and patience, this will be a breeze!
+    </p>
+
 {% endblock code_body %}

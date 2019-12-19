@@ -55,6 +55,20 @@
     font-size: 1.75rem;
 }
 
+.coderino-imagerino {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#faberino {
+    vertical-align: 0rem;
+    line-height: 1.5rem;
+    float: right;
+}
+
 #code-right-title:hover {
     -webkit-animation: color-change 3s infinite;
     -moz-animation: color-change 3s infinite;
@@ -62,6 +76,9 @@
     -ms-animation: color-change 3s infinite;
     animation: color-change 3s infinite;
 }
+
+
+/* ANIMATION YO */
 
 @-webkit-keyframes color-change {
     0% { color: #9400D3; }

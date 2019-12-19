@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
 {% block main_head %}
-    {% load static %}
-
     <title>SomethingReally.fun - Welcome, yo</title>
 {% endblock main_head %}
 
 {% block main_content %}
+    {% load static %}
     <script src="{% static 'blog/js/balls.js' %}"></script>
     <main role="main" class="container mx-auto mt-lg-5 p-2" style="z-index: 2; background-color: rgba(250,250,250,0.75);">
         <div class="row mx-0 mt-lg-5">
@@ -14,7 +13,7 @@
                 <h1 style="font-weight: bold">Hello!</h1>
                 <p class="text-justify my-3">This is the home page, right? Let's text it up.<br>
                     Why do i even need a website? Well, i wanted to practice Django and find a way to get familiar with Bootstrap 4, plus I had a bunch of photos around and i already had a GCP....
-                    So, why not? By the way, the page itself (actually, a Django web app in Python 3.7 with a bit of JavaScript here and there) is also available <a href="https://github.com/ayy-em/blogproject">on Github</a>
+                    So, why not? By the way, the page itself (actually, a Django web app in Python 3.7 with a bit of JavaScript here and there) is also available <a href="https://github.com/ayy-em/somethingreally.fun">on Github</a>
                     if you want to be judgemental or looking to contribute. Always open to feedback!</p>
                 <ul>
                     <li>A lot of exciting stuff about Amsterdam can be found in the <a href="/amsterdam">Amsterdam section</a> of the website.</li>
