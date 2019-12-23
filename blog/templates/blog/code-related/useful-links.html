@@ -11,10 +11,10 @@
         <p class="mt-3 mb-2">Learning to code sure is an uphill battle. Lucikly, the web is full of resources that would
         help you out in no time. Here's a list of resources you should love and cherish.</p>
     </div>
-    <div class="container-flex my-4">
+    <div class="container-flex mt-2 mb-4">
         <!-- This is one card -->
         <div class="container-flex" id="links-card-website">
-            <div class="row px-1 py-2">
+            <div class="row px-1 py-1 d-flex">
                 <div class="col-3 my-auto">
                     {% load static %}
                     <img id="link-card-pic" src="{% static '/blog/code/github.png' %}" alt="Github pic">
@@ -23,14 +23,65 @@
                     <a href="https://github.com/ayy-em">
                         <h3 class="links-card-name">Github</h3>
                     </a>
-                    <p class="links-card-description pb-0">Github is world's largest community of developers and a global
-                        company that provides hosting for software development version control using Git. From open
-                        source collaborations to enterprise-scale projects, you can host and review code, manage
-                        projects, and build software alongside 40 million developers.
+                    <p class="links-card-description pb-0 mb-0">Github is world's largest community of developers and a global
+                        company owned by Microsoft that provides hosting for software development version control using Git.
+                        You can host and review code, manage projects, and build software alongside 40 million developers.
+                        <br>Github is great for <a href="/code/vcs-git">version control</a>, collaboration and showing
+                        off your crazy coding skills to potential employers kind of like a digital portfolio for designers.
                     </p>
                 </div>
             </div>
         </div>
         <!-- End of one card -->
+        <div class="container-flex" id="links-card-website">
+            <div class="row px-1 py-1 d-flex">
+                <div class="col-3 my-auto">
+                    <img id="link-card-pic" src="{% static '/blog/code/stack-overflow.png' %}" alt="StackOverflow pic">
+                </div>
+                <div class="col-9 my-auto">
+                    <a href="https://stackoverflow.com/">
+                        <h3 class="links-card-name">Stack Overflow</h3>
+                    </a>
+                    <p class="links-card-description pb-0 mb-0">Stack Overflow is the largest online community for
+                        anyone that codes to learn, share their knowledge, and build their careers. Visitors from all
+                        over the world come to Stack Overflow to help solve coding problems and develop new skills.
+                        <br>I'm pretty sure you'll encounter this website very early on in your coding journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-flex" id="links-card-website">
+            <div class="row px-1 py-1 d-flex">
+                <div class="col-3 my-auto">
+                    <img id="link-card-pic" src="{% static '/blog/code/w3.png' %}" alt="W3Schools pic">
+                </div>
+                <div class="col-9 my-auto">
+                    <a href="https://www.w3schools.com/">
+                        <h3 class="links-card-name">W3Schools</h3>
+                    </a>
+                    <p class="links-card-description pb-0 mb-0">Another website you're bound to stumble upon when
+                        googling that pesky problem you're struggling with, W3Schools is an educational platform with a
+                        focus on web development. Content mostly includes tutorials about HTML, CSS, JavaScript and such.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-flex" id="links-card-website">
+            <div class="row px-1 py-1 d-flex">
+                <div class="col-3 my-auto">
+                    <img id="link-card-pic" src="{% static '/blog/code/codepen.png' %}" alt="codepen.io pic">
+                </div>
+                <div class="col-9 my-auto">
+                    <a href="https://codepen.io/">
+                        <h3 class="links-card-name">CodePen</h3>
+                    </a>
+                    <p class="links-card-description pb-0 mb-0">CodePen is an online community for testing and showcasing
+                        user-created HTML, CSS and JavaScript code snippets. It functions as an online code editor and
+                        open-source learning environment, where developers can create code snippets, called "pens," and test them.
+                        <br>A very convenient way to showcase <a href="https://codepen.io/chris22smith/pen/RZogMa">your beautiful new CSS background!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock code_body %}

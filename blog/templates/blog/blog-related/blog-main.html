@@ -7,14 +7,14 @@
 {% block main_blog_body %}
     <h1 class="blog-main-title">Stories, Thoughts, Pictures and People</h1>
     {% for post in posts reversed %}
-    <div class="post-preview">
-        <a href="/blog/main/post/{{post.id}}">
-            <h3 class="post-title">{{post.title}}</h3>
-        </a>
-        <p class="post-subtitle">{{post.content |safe}}</p>
-        <p class="post-meta">Posted by {{ post.author }} on {{post.date_posted.day}}.{{post.date_posted.month}}.{{post.date_posted.year}} at
-            {{ post.date_posted.hour }}:{% if post.date_posted.minute < 10 %}0{{post.date_posted.minute}}{% endif %}{% if post.date_posted.minute >= 10 %}{{ post.date_posted.minute }}{% endif %}.</p>
-    </div>
+        <div class="post-preview">
+            <a href="/blog/main/post/{{post.id}}">
+                <h3 class="post-title">{{post.title}}</h3>
+            </a>
+            <p class="post-subtitle">{{post.content |safe}}</p>
+            <p class="post-meta">Posted by {{ post.author }} on {{post.date_posted.day}}.{{post.date_posted.month}}.{{post.date_posted.year}} at
+                {{ post.date_posted.hour }}:{% if post.date_posted.minute < 10 %}0{{post.date_posted.minute}}{% endif %}{% if post.date_posted.minute >= 10 %}{{ post.date_posted.minute }}{% endif %}.</p>
+        </div>
     {% endfor %}
     <!--div class="container-flex"></div>
     <nav aria-label="Page navigation">
@@ -26,4 +26,5 @@
         <li class="page-item mr-auto text-center" style="min-width: 5rem;"><a class="page-link" href="#">Next</a></li>
       </ul>
     </nav-->
+    <div class="container-flex" id="blog-main-bot-span"></div>
 {% endblock main_blog_body %}

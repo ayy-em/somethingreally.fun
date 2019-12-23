@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     height: 100%;
     min-height: 100vh;
-    color: #333333;
+    color: #343A40;
     font-family: 'Istok Web', sans-serif;
     line-height: 1.75;
     background: #fafafa;
@@ -83,7 +83,7 @@ ul {
 /* LIST GROUP - START */
 
 .list-group-item {
-    color: #333333;
+    color: #343A40;
     transition: background-color;
     transition-duration: 1s;
 }
@@ -103,7 +103,7 @@ ul {
 /* FOOTER - START */
 
 .footer {
-    background-color: #333333;
+    background-color: #343A40;
     position: relative;
     display: flex;
     flex-shrink: 0;
@@ -137,7 +137,7 @@ ul {
 
 .navbar-dark .navbar-nav .nav-link {
     background: none;
-    color: #f9f9f9;
+    color: #fafafa;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     transition: color;
@@ -227,7 +227,7 @@ ul {
 }
 
 .dropdown-item {
-    color: #333333;
+    color: #343A40;
     transition: background-color;
     transition-duration: 1s;
 }
@@ -303,7 +303,7 @@ ul {
   z-index: 4;
   top: 0;
   left: 0;
-  background-color: #333333;
+  background-color: #343A40;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 4rem;
@@ -334,7 +334,7 @@ ul {
     text-align: center;
     padding: 0;
     width: fit-content;
-    border-color: #303336;
+    border-color: #343A40;
     border-radius: 0.4rem;
 }
 

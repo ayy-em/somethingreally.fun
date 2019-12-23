@@ -42,15 +42,11 @@
     border-radius: 0.3rem;
     padding: 0.1rem;
     text-align: center;
-    background: white;
-	/*background-image: linear-gradient(to top, white, white, white), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
-    background-origin: border-box;
-	background-clip: content-box, border-box;
-	background-size: cover; */
+    background: #fafafa;
 }
 
 #code-right-title {
-    color: #333333;
+    color: #343A40;
     font-weight: 500;
     font-size: 1.75rem;
 }
@@ -77,10 +73,18 @@
     animation: color-change 3s infinite;
 }
 
+pre {
+    background: rgba(52,58,64,1);
+    color: #fafafa;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem auto;
+}
+
 /* USEFUL LINKS - START*/
 #links-card-website {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     border: 0.1rem solid #0f74a8;
     border-radius: 0.2rem;
     padding: 0.5rem;
@@ -107,6 +111,7 @@
 }
 
 .links-card-description {
+    text-align: justify;
 }
 
 /* USEFUL LINKS - END */

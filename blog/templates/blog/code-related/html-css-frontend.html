@@ -1,11 +1,41 @@
 {% extends "../code-related/code-base.html"%}
 
 {% block code_head %}
-    <title>HTML, CSS & Other frontend stuff</title>
+    <title>HTML & CSS - Introduction Tutorial</title>
 {% endblock code_head %}
 
 
 {% block code_body %}
-    <h1>HTML, CSS & Other frontend stuff</h1>
-    <p class="mt-3 mb-2">It's super easy.<br>Which is ironic considering this website is a mess, I know. But I'll get there, eventually.</p>
+    <div class="container-flex">
+        <h1>HTML & CSS: Introduction</h1>
+        <p class="mt-3 mb-2">HTML is the foundation of web development, web design and, well, everything website-related.
+            <br>The language is extremely easy to grasp and is helpful to know even for non-tech people. But what is HTML?
+            Over time, I've heard so many wrong explanations I decided to do something about it. Let's put it this way:
+        </p>
+        <ul>
+            <li>HTML stands for HyperText Markup Language.</li>
+            <li>HTML consists of a series of tags and elements which tell the browser how to display the content.</li>
+            <li>Tags separate page contents into distinctive pieces for the browser to display.</li>
+            <li>Instead of showing the tags, HTML uses them as an indication of how a certain element should look.</li>
+            <li>HTML is NOT a programming language.</li>
+        </ul>
+        <p class="mt-2">
+            Let's take a look at a very simple webpage and try to understand the structure.
+        </p>
+        <pre>
+            <code><!---->
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code>
+        </pre>
+    </div>
 {% endblock code_body %}

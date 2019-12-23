@@ -3,10 +3,10 @@
 #ams-map-send-suggestion {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(52,58,64,.05);
     padding: .5rem 1rem .5rem 1rem;
     color: #7B68EE;
-    border-color: #333333;
+    border-color: #343A40;
     transition: color;
     transition-property: border-bottom-color, border-top-color, border-left-color, border-right-color, background-color;
     transition-duration: .5s;
@@ -34,7 +34,7 @@
 }
 
 #ams-map-inputGroup-sizing-default {
-    color: #333333;
+    color: #343A40;
 }
 
 .ams-map {
