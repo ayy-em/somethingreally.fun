@@ -77,6 +77,39 @@
     animation: color-change 3s infinite;
 }
 
+/* USEFUL LINKS - START*/
+#links-card-website {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid #0f74a8;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+#link-card-pic {
+    max-height: 8rem;
+    height: 100%;
+    width: auto;
+    padding: 0.1rem;
+    margin: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.links-card-name {
+    color: #333333;
+    transition: color;
+    transition-duration: .5s;
+}
+
+.links-card-name:hover {
+    color: #9400D3;
+}
+
+.links-card-description {
+}
+
+/* USEFUL LINKS - END */
 /* ANIMATION YO */
 @-webkit-keyframes color-change {
     0% { color: #9400D3; }

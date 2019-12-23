@@ -6,7 +6,7 @@
 
 {% block main_blog_body %}
     <h1 class="blog-main-title">Stories, Thoughts, Pictures and People</h1>
-    {% for post in posts %}
+    {% for post in posts reversed %}
     <div class="post-preview">
         <a href="/blog/main/post/{{post.id}}">
             <h3 class="post-title">{{post.title}}</h3>
