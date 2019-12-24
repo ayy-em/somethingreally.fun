@@ -12,15 +12,14 @@
 {% endblock main_head %}
 
 {% block main_content %}
-    <div class="textytext mx-auto mt-5 mb-3">
-        <img src="{% static 'blog/bunq_big_tight.png' %}" alt="bunq" style="max-height: 30vh; max-width: 20vw;">
-        <!--p style="font-size: 4em; margin: 0 0 0 0; vertical-align: bottom">bunq</p>
-        <p style="font-size: 1em; vertical-align: top">Bank of The Free</p-->
-        <br><div style="margin-top: 15rem"></div>
-        Join bunq using my referral link now.<br>You will not regret it.<br>
-
-        <a href="http://www.bunq.com" class="button4">Sign up in 5 minutes</a>
-    <br>
+    <div class="textytext mx-auto my-auto p-2">
+        <img src="{% static 'blog/bunq_big_tight.png' %}" alt="bunq" id="bunq-image">
+        <div class="container-flex my-5">
+            Sign up for bunq now.<br>Enjoy banking 5 minutes later.
+        </div>
+        <div class="container-flex">
+            <a href="http://www.bunq.com" class="button4">Join bunq. Be cool.</a>
+        </div>
     </div>
 {% endblock main_content %}
 

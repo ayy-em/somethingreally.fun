@@ -83,11 +83,12 @@ pre {
 
 /* USEFUL LINKS - START*/
 #links-card-website {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border: 0.1rem solid #0f74a8;
     border-radius: 0.2rem;
     padding: 0.5rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 #link-card-pic {
