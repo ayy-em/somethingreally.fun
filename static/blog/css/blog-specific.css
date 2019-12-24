@@ -124,6 +124,23 @@ a.page-link:hover {
     color: #9400D3;
 }
 
+ #blog-post-nav-button {
+     min-width: 6rem;
+     display: flex;
+     margin: auto;
+     text-align: center;
+     border-right: 1px dashed rgba(52,58,64,0.25);
+     border-top: 1px dashed rgba(52,58,64,0.25);
+     border-bottom: 0.1rem solid rgba(148,0,211,1);
+     border-left: 1px dashed rgba(52,58,64,0.25);
+     color: #343A40;
+     transition: color .5s;
+ }
+
+ #blog-post-nav-button:hover {
+    color: #9400D3;
+ }
+
 /* POST STUFF - END */
 /* INTERVIEWS - START */
 .card-img-top {

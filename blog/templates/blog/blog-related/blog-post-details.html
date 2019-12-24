@@ -8,20 +8,21 @@
 
     <div class="container-flex">
         <h2 class="post-title">{{post.title}}</h2>
-        <p class="post-subtitle mt-3">{{post.content}}</p>
+        <p class="post-subtitle mt-3">{{post.content | safe}}</p>
         <p class="post-meta mt-3" style="text-emphasis: #5b80b2">Posted by {{post.author}} on {{post.date_posted.day}}.{{post.date_posted.month}}.{{post.date_posted.year}}.</p>
     </div>
-    <div class="container-flex" style="min-height: 50px"><script async src="https://comments.app/js/widget.js?2" data-comments-app-website="M8tTx9zj" data-limit="5" data-dislikes="1" data-outlined="1"></script></div>
-    <div class="container-flex">
+    <div class="container-flex my-5">
       <div class="row">
         <div class="col-sm mx-auto">
-            <button type="button" class="btn btn-secondary btn-lg float-right text-center mx-auto" style="display: flex; min-width: 6em; vertical-align: center"><p class="text-center my-0 mx-auto">Previous</p></button>
+            <button type="button" class="btn btn-lg float-left" id="blog-post-nav-button"><p class="my-0 mx-auto">Previous</p></button>
         </div>
         <div class="col mx-auto">
-          <a href="/blog/main"><button type="button" class="btn btn-lg btn-primary mx-auto my-auto" style="display: flex"><p class="text-center my-0">Back to blog</p></button></a>
+          <a href="/blog/main">
+              <button type="button" class="btn btn-lg" id="blog-post-nav-button" style="background: rgba(0,0,0,0.05)"><p class="my-0 mx-auto">Back2Blog</p></button>
+          </a>
         </div>
         <div class="col-sm mr-auto">
-            <button type="button" class="btn btn-secondary btn-lg float-left text-center" style="display: flex; min-width: 6em"><p class="text-center my-0 mx-auto">Next</p></button>
+            <button type="button" class="btn btn-lg float-right" id="blog-post-nav-button"><p class="my-0 mx-auto">Next</p></button>
         </div>
       </div>
     </div>
