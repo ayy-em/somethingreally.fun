@@ -19,6 +19,18 @@
 }
 
 /* TIMER - END */
+
+/* GENERAL SHIT YO - START */
+.anchorbaby {
+    color: #343A40;
+    transition: color 1s;
+}
+
+.anchorbaby:hover {
+    color: #9400D3;
+}
+/* GENERAL SHIT YO - END */
+
 /* RIGHT COLUMN - START */
 
 #content-border-thing {
