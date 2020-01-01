@@ -54,6 +54,12 @@
   100% { background-position: 512px 512px; }
 }
 
+#blog-right-other-things {
+    margin-top: 3rem;
+    background: none;
+    color: #fafafa;
+}
+
 /* Right Column - END */
 /* Main (Post collection) - START */
 

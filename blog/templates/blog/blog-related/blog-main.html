@@ -1,11 +1,11 @@
 {% extends "blog/blog-related/blog-base.html" %}
 
 {% block main_head %}
-    <title>{{title}}</title>
+    <title>Blog Territory at SomethingReally.fun</title>
 {% endblock main_head %}
 
 {% block main_blog_body %}
-    <h1 class="blog-main-title">Stories, Thoughts, Pictures and People</h1>
+    <h1 class="blog-main-title">Stories, Pictures and People</h1>
     {% for post in posts reversed %}
         <div class="post-preview">
             <a href="/blog/main/post/{{post.id}}">
