@@ -9,8 +9,8 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'blog/css/blog-specific.css' %}">
     <!-- start of nav right column with links thingy-->
-    <main role="main" class="container">
-      <div class="row" id="blogmaincontent">
+    <main role="main" class="container" id="blogmaincontent">
+      <div class="row mx-auto">
         <div class="col-md-10">
           {% block main_blog_body %}{% endblock main_blog_body %}
         </div>
