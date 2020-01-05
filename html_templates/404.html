@@ -22,6 +22,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Primary Meta Tags -->
+    <title>Stop, 404 time!</title>
     <meta name="title" content="Ooh oh, we got a 404 here">
     <meta name="description" content="Page not found. And we really did look hard for it.">
     <meta name="author" content="EM, em@somethingreally.fun">
@@ -42,13 +43,15 @@
     <!-- End GTM (noscript) -->
     {% load static %}
     <!-- START OF ACTUAL CONTENT -->
-    <div class="container-flex h-100" id="maincontainerfourohfour">
+    <div class="container-flex h-100 mx-auto" id="maincontainerfourohfour">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
         <div class="mx-auto my-5">
-            <h1 class="mx-auto my-auto" style="color: #343A40">404</h1>
+            <h1 class="text-center">404</h1>
         </div>
-        <div class="container-flex mx-auto my-auto">
-            <img src="{% static 'blog/fourohfour.png' %}" alt="404.png" class="center">
-            <p>This page is not real. You're lost. Go away.</p>
+        <div class="container-flex mx-auto text-center">
+            <img src="{% static 'blog/fourohfour.png' %}" alt="404.png" class="mx-auto my-5 d-block" style="height: 400px; width: auto">
+            <p class="text-center my-5">Bigfoot. Loch Ness Monster. This page.<br>They're not real. You're lost.</p>
         </div>
     </div>
     <!-- END OF ACTUAL CONTENT -->
