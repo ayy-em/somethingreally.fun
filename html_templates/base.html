@@ -1,136 +1,136 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
-  <head>
-    <!-- GA + GTM -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150671594-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-150671594-1');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MNPXXFV');</script>
-    <!-- End Google Tag Manager -->
-    <!-- End GA + GTM -->
-    <!-- START OF BOOTSTRAP -->
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Amsterdam, Code, Stuff and Things">
-    <meta name="description" content="All sorts of things about Amsterdam, coding, and other unrelated things. ">
-    <meta property="og:image" content="https://www.securingindustry.com/assets/36/Elchinator_pixabay.jpg">
-    <meta property="twitter:image" content="https://www.securingindustry.com/assets/36/Elchinator_pixabay.jpg">
-    <meta name="author" content="EM, em@somethingreally.fun">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/custom.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
-    <!-- END OF BOOTSTRAP -->
-    <!-- favicon tiem -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'blog/favicon.ico' %}"/>
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/f36e3b92f9.js" crossorigin="anonymous"></script>
-    <!-- End of Font Awesome -->
-    {% block main_head %}{% endblock %}
-  </head>
-  <body class="d-flex flex-column h-100">
-    <!-- GTM (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNPXXFV"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End GTM (noscript) -->
-    {% load static %}
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding-top: 5rem"><i class="fas fa-lg fa-times"></i></a>
-        <a href="/">Home</a>
-        <a href="/amsterdam/">Amsterdam</a>
-        <a href="/blog/">Blog</a>
-        <a href="/code/">Code</a>
-        <hr class="half-hr-thing my-3"/>
-        <a href="/contact/">Contact me</a>
-        <a href="/hire-me/">Hire me</a>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-main-big">
-        <nav class="navbar navbar-dark mr-2 ml-4 my-auto">
-              <a class="navbar-brand mx-2" id="ebuchiilogo" href="/">SomethingReally.fun</a>
-        </nav>
-        <!-- This part is invisible on LG+ -->
-        <div class="btn show d-lg-none">
-            <i class="fas fa-bars fa-lg mx-0 my-0" style="border: none; background-color: rgba(255,255,255,0); color: white" onclick="openNav()"></i>
+    <head>
+        <!-- GA + GTM -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150671594-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-150671594-1');
+        </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MNPXXFV');</script>
+        <!-- End Google Tag Manager -->
+        <!-- End GA + GTM -->
+        <!-- START OF BOOTSTRAP -->
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Amsterdam, Code, Stuff and Things">
+        <meta name="description" content="All sorts of things about Amsterdam, coding, and other unrelated things. ">
+        <meta property="og:image" content="https://www.securingindustry.com/assets/36/Elchinator_pixabay.jpg">
+        <meta property="twitter:image" content="https://www.securingindustry.com/assets/36/Elchinator_pixabay.jpg">
+        <meta name="author" content="EM, em@somethingreally.fun">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- END OF BOOTSTRAP -->
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/custom.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+        <!-- favicon tiem -->
+        <link rel="shortcut icon" type="image/png" href="{% static 'blog/favicon.ico' %}"/>
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/f36e3b92f9.js" crossorigin="anonymous"></script>
+        <!-- End of Font Awesome -->
+        {% block main_head %}{% endblock %}
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- GTM (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNPXXFV"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End GTM (noscript) -->
+        {% load static %}
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding-top: 5rem"><i class="fas fa-lg fa-times"></i></a>
+            <a href="/">Home</a>
+            <a href="/amsterdam/">Amsterdam</a>
+            <a href="/blog/">Blog</a>
+            <a href="/code/">Code</a>
+            <hr class="half-hr-thing my-3"/>
+            <a href="/contact/">Contact me</a>
+            <a href="/hire-me/">Hire me</a>
         </div>
-        <!-- END OF part is invisible on LG+ -->
-        <div class="navbar d-none d-lg-flex h-100 w-100">
-            <ul class="navbar-nav mr-auto">
-              <li class="navbar-item">
-                <a class="nav-link" href="/amsterdam">Amsterdam</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/blog/main">Blog</a>
-              </li>
-              <!--li class="nav-item">
-                <a class="nav-link" href="/crash-courses">Crash Courses</a>
-              </li-->
-              <li class="nav-item">
-                <a class="nav-link" href="/code">Code</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav mx-0 my-auto">
-              <li class="nav-item float-right">
-                <a class="nav-link" href="/hire-me">Hire me</a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link" href="/contact">Contacts</a>
-              </li>
-              <li class="nav-item float-right mr-5">
-                  <a href="/bunq"><img src="{% static 'blog/bunq.png' %}" class="m-0 px-0 pb-0 pt-1" alt="bunq" style="height: 2.5rem; width: auto"></a>
-              </li>
-            </ul>
-        </div>
-    </nav>
-    <main role="main" class="containertwo">
-        {% block main_content %}{% endblock main_content %}
-    </main>
-    <!-- START OF FOOTER -->
-    <footer class="footer footer-dark bg-dark mt-auto mx-auto py-2">
-        <div class="row w-100 mx-0 px-0">
-            <div class="col-auto mx-auto mt-1 mb-0 px-0">
-                  <a href="mailto:em@somethingreally.fun" class="yo-footer-link"><i class="fas fa-at fa-lg"></i></a>
-                  <a href="https://github.com/ayy-em" class="yo-footer-link"><i class="fab fa-github fa-lg"></i></a>
-                  <a href="https://www.linkedin.com/in/mironove/" class="yo-footer-link"><i class="fab fa-linkedin fa-lg"></i></a>
-                  <a href="https://t.me/ayy_yo" class="yo-footer-link"><i class="fab fa-telegram fa-lg"></i></a>
-                  <a href="https://twitter.com/gurugamesh" class="yo-footer-link"><i class="fab fa-twitter fa-lg"></i></a>
-                  <a href="https://instagram.com/jm_ams" class="yo-footer-link"><i class="fab fa-instagram fa-lg"></i></a>
-                  <a href="https://www.facebook.com/mironov.nl" class="yo-footer-link"><i class="fab fa-facebook fa-lg"></i></a>
-                  <a href="https://steamcommunity.com/id/tddell/" class="yo-footer-link"><i class="fab fa-steam fa-lg"></i></a>
-                  <a href="https://soundcloud.com/jack-mironov" class="yo-footer-link"><i class="fab fa-soundcloud fa-lg"></i></a>
-                  <a href="https://bunq.me/mironov" class="yo-footer-link"><i class="fas fa-euro-sign"></i></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-main-big">
+            <nav class="navbar navbar-dark mr-2 ml-4 my-auto">
+                  <a class="navbar-brand mx-2" id="ebuchiilogo" href="/">SomethingReally.fun</a>
+            </nav>
+            <!-- This part is invisible on LG+ -->
+            <div class="btn show d-lg-none">
+                <i class="fas fa-bars fa-lg mx-0 my-0" style="border: none; background-color: rgba(255,255,255,0); color: white" onclick="openNav()"></i>
             </div>
-        </div>
-    </footer>
-    <!-- END OF FOOTER -->
-    <!-- START OF MOBILE NAV SCRIPT -->
-    <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "12rem";
-        }
+            <!-- END OF part is invisible on LG+ -->
+            <div class="navbar d-none d-lg-flex h-100 w-100">
+                <ul class="navbar-nav mr-auto">
+                  <li class="navbar-item">
+                    <a class="nav-link" href="/amsterdam">Amsterdam</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blog/main">Blog</a>
+                  </li>
+                  <!--li class="nav-item">
+                    <a class="nav-link" href="/crash-courses">Crash Courses</a>
+                  </li-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/code">Code</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mx-0 my-auto">
+                  <li class="nav-item float-right">
+                    <a class="nav-link" href="/hire-me">Hire me</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="/contact">Contacts</a>
+                  </li>
+                  <li class="nav-item float-right mr-5">
+                      <a href="/bunq"><img src="{% static 'blog/bunq.png' %}" class="m-0 px-0 pb-0 pt-1" alt="bunq" style="height: 2.5rem; width: auto"></a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main" class="containertwo">
+            {% block main_content %}{% endblock main_content %}
+        </main>
+        <!-- START OF FOOTER -->
+        <footer class="footer footer-dark bg-dark mt-auto mx-auto py-2">
+            <div class="row w-100 mx-0 px-0">
+                <div class="col-auto mx-auto mt-1 mb-0 px-0">
+                    <a href="mailto:em@somethingreally.fun" class="yo-footer-link"><i class="fas fa-at fa-lg"></i></a>
+                    <a href="https://github.com/ayy-em" class="yo-footer-link"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/mironove/" class="yo-footer-link"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://t.me/ayy_yo" class="yo-footer-link"><i class="fab fa-telegram fa-lg"></i></a>
+                    <a href="https://twitter.com/gurugamesh" class="yo-footer-link"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://bunq.me/mironov" class="yo-footer-link"><i class="fas fa-euro-sign fa-lg"></i></a>
+                    <a href="https://instagram.com/jm_ams" class="yo-footer-link"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.facebook.com/mironov.nl" class="yo-footer-link"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://steamcommunity.com/id/tddell/" class="yo-footer-link"><i class="fab fa-steam fa-lg"></i></a>
+                    <a href="https://soundcloud.com/jack-mironov" class="yo-footer-link"><i class="fab fa-soundcloud fa-lg"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- END OF FOOTER -->
+        <!-- START OF MOBILE NAV SCRIPT -->
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "12rem";
+            }
 
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-    <!-- END OF MOBILE NAV SCRIPT -->
-    <!-- START OF BOOTSTRAP -->
-    <!-- Optional JavaScript: jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- END OF BOOTSTRAP -->
-  </body>
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <!-- END OF MOBILE NAV SCRIPT -->
+        <!-- START OF BOOTSTRAP -->
+        <!-- Optional JavaScript: jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- END OF BOOTSTRAP -->
+    </body>
 </html>
