@@ -21,6 +21,7 @@ urlpatterns = [
     # Amsterdam
     path('amsterdam/', views.ams_hello, name='ams-hello'),
     path('amsterdam/guide', views.ams_guide, name='ams-guide'),
+    path('amsterdam/quick-facts-about-Amsterdam', views.ams_quick_facts, name='ams-quick-facts'),
     path('amsterdam/map', views.ams_map, name='ams-map'),
     path('amsterdam/stuff', views.ams_stuff, name='ams-stuff'),
     path('amsterdam/adam24live', views.ams_adam24live, name='ams-adam24live'),

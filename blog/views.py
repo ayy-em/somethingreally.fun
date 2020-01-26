@@ -80,6 +80,10 @@ def ams_guide(request):
     return render(request, 'blog/amsterdam/ams_guide.html', context)
 
 
+def ams_quick_facts(request):
+    return render(request, 'blog/amsterdam/ams-quick-facts.html')
+
+
 def ams_map(request):
     context = {
         'ayy': 'lmao'

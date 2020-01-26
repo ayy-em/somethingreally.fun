@@ -61,5 +61,23 @@
     100% {
         background-position: right;
     }
+}
 
+/* Quick facts*/
+
+.btn-link {
+    color: #343A40;
+    transition: color 2s;
+}
+
+.btn-link:hover, .btn-link:active, .btn-link:focus {
+    color: #7B68EE;
+    text-decoration: none;
+}
+
+#ams-quick-fact-card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: auto;
 }

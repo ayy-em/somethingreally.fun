@@ -1,0 +1,88 @@
+{% extends "blog/amsterdam/ams-base.html" %}
+{% block main_head %}
+    <title>Amsterdam: You absolutely must know these facts</title>
+{% endblock main_head %}
+
+{% block main_blog_body %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/amsterdam.css' %}">
+    <div class="container-flex p-2">
+        <h1>
+            Must know facts about The Netherlands and Amsterdam
+        </h1>
+        <p class="my-4">
+            Definitely handy to know these prior to traveling here. They also can be entertaining enough to keep you from
+            going to sleep for five more minutes, which you would totally regret the next morning. Anyway, let's get
+            this started! You can click the facts to learn more. Well, you should, but I did not test it on any browsers
+            other than Chrome, so good luck.
+        </p>
+        <div id="accordion">
+          <!-- one clean card to copy -->
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingOne">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Population: ~872'000 people. Currency: Euro.
+                </button>
+              </h4>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                  What other basics do you want to know? Amsterdam is the third busiest airport and fifth largest port
+                  in Europe, a cultural capital of the Netherlands and its 17th century canals are on the UNESCO World
+                  Heritage List.
+              </div>
+            </div>
+          </div>
+          <!-- one clean card to copy -->
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingFour">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  The city gets its name from a village called Aemstelredamme
+                </button>
+              </h4>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                Which basically means "We built a bridge and a dam across the river Amstel and we're gonna live here".
+                  It got city rights in either 1300 or 1306. Not that I don't remember, it's just that there are multiple opinions on the topic.
+              </div>
+            </div>
+          </div>
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingTwo">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Dutchies are one of the tallest nations in the world
+                </button>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                  At a stunning 183,9 cm on average for males, the Netherlands is either the tallest nation or shares it
+                  with Bosnia and Herzegovina, Montenegro and Denmark, <a href="https://www.telegraph.co.uk/travel/maps-and-graphics/the-tallest-and-shortest-countries-in-the-world/">claims this random article.</a>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingThree">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Pretty much everyone here can speak English at a reasonable level
+                </button>
+              </h4>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Even though Dutch is obviously the official language in Amsterdam, most of the residents speak English
+                  as well as some natives do. <a href="https://en.wikipedia.org/wiki/English_in_the_Netherlands">Wiki</a>
+                  mentions 93% of Dutch people claim to be able to converse freely in English. The share of bilinguals
+                  is even higher in the capital and the Dutch version of English even has a name - Dunglish (or
+                  <i>steenkolenengels</i>).
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+{% endblock main_blog_body %}
