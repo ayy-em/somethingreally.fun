@@ -150,7 +150,7 @@ a.page-link:hover {
 /* POST STUFF - END */
 /* INTERVIEWS - START */
 .card-img-top {
-    height: 10rem;
+    height: 12.5rem;
     object-fit: cover;
     border-bottom: 1px dotted #7c7c7c;
 }
