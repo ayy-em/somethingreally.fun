@@ -5,6 +5,7 @@
 
 {% block main_blog_body %}
     {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'blog/css/amsterdam.css' %}">
     <div class="container-flex p-2">
         <h1>
@@ -16,21 +17,34 @@
             this started! You can click the facts to learn more. Well, you should, but I did not test it on any browsers
             other than Chrome, so good luck.
         </p>
+        <h4>
+            Key Stuff Everyone Needs To Know:
+        </h4>
+        <ul class="my-4">
+            <li>Population: Amsterdam - 872'000, the Netherlands - 17'180'000 (2018).</li>
+            <li>Timezone: UTC+1 (CET) and UTC+2 (CEST) in the summer. For European part, that is.</li>
+            <li>Official language: Dutch (Nederlands). It's spoken by 24 mln people worldwide as a first language!</li>
+            <li>Currency: Euro. Dutch guilder (euro's predecessor in NL) yielded in favor of it on 1st of January 1999.</li>
+            <li>The Netherlands also have 3 municipalities (with 25k people!) in the Caribbean: Bonaire, Sint Eustatius and Saba.</li>
+            <li>With a GDP of $58'255 per capita, the Netherlands are ranked 13th in the world in that regard.</li>
+            <li>Amsterdam's 17th century canals are on the UNESCO World Heritage List.</li>
+            <li>King's Day (27th of April and yes, there is a King) is the biggest Dutch holiday of the year.</li>
+            <li>Soft drugs are not actually completely legal, however, a non-enforcement policy is in place.</li>
+        </ul>
         <div id="accordion">
           <!-- one clean card to copy -->
           <div class="card" id="ams-quick-fact-card">
             <div class="card-header" id="headingOne">
               <h4 class="mb-0">
                 <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Population: ~872'000 people. &nbsp;&nbsp; Currency: Euro. &nbsp;&nbsp; Locals: Dutch people.
+                  There are 165 canals and 1281 bridges in Amsterdam
                 </button>
               </h4>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
-                  What other basics do you want to know? Amsterdam is the third busiest airport and fifth largest port
-                  in Europe, a cultural capital of the Netherlands and its 17th century canals are on the UNESCO World
-                  Heritage List.
+                  Canals have a total length of over 100 kilometers - they actually became part of UNESCO's World
+                  Heritage List in 2010. Side fact: Amsterdam has three times as many bridges as Venice does!
               </div>
             </div>
           </div>
@@ -76,13 +90,102 @@
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">
                 Even though Dutch is obviously the official language in Amsterdam, most of the residents speak English
-                  as well as some natives do. <a href="https://en.wikipedia.org/wiki/English_in_the_Netherlands">Wiki</a>
+                  as well as some natives do. <a href="https://en.wikipedia.org/wiki/English_in_the_Netherlands">Wikipedia</a>
                   mentions 93% of Dutch people claim to be able to converse freely in English. The share of bilinguals
                   is even higher in the capital and the Dutch version of English even has a name - Dunglish (or
                   <i>steenkolenengels</i>).
               </div>
             </div>
           </div>
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingFive">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  You can find over 2'500 houseboats in Amsterdam
+                </button>
+              </h4>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                  Apart from residential houseboats, one can find floating hotels, restaurants and a
+                  <a href="https://houseboatmuseum.nl/">Houseboat museum!</a> Living in one actually requires a special
+                  permit and the wooden boats need to be repainted every three years according to the law currently in
+                  place. That way the city protects itself from ugly run-down junkyards in the canals.
+              </div>
+            </div>
+          </div>
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingSix">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  Amsterdam's population on King's Day is double that of any other day!
+                </button>
+              </h4>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="card-body">
+                  Between 600'000 and 1 million people get to the city specifically for celebrations. It gets <strong>really</strong>
+                  crowded during the day! One more fact: everyone's wearing orange that day and an average person spends
+                  €26 on orange outfits and souvenirs for King's day.
+              </div>
+            </div>
+          </div>
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingSeven">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                  Marijuana and psychedelic mushrooms still do not possess a 100% legal status.
+                </button>
+              </h4>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+              <div class="card-body">
+                  The law still defines these as controlled substances. The legal framework is actually filled with loopholes:
+                  for example, there are licenses for growing and selling weed, but no license for transportation. Which
+                  makes the situation complicated for the delivery drivers - possession of huge amounts is really illegal!
+                  However, non-enforcement and tolerance policies are in place. Which means that the worst that could happen
+                  would be having a policeman tell you to put your joint away. Just make sure to not be a dick by smoking in a public place.
+              </div>
+            </div>
+          </div>
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingEight">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                  Despite being a relatively small country, they have 5 unique regional languages
+                </button>
+              </h4>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+              <div class="card-body">
+                  Between Dutch, Papiamento (Caribbean thing, official in Aruba and Curacao), West Frisian (actually
+                  sounds more like Danish), Dutch Low Saxon (more like a dialect) and Limburgish (also spoken in
+                  Belgium), that's more than enough diversity for such a small amount of people.
+              </div>
+            </div>
+          </div>
+          <div class="card" id="ams-quick-fact-card">
+            <div class="card-header" id="headingNine">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                  New York? More like New Amsterdam!
+                </button>
+              </h4>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+              <div class="card-body">
+                  The colony of New Netherlands was established by the Dutch West India Company in 1624 and used to encompass
+                  all of present-day NYC, as well as parts of Long Island, New Jersey (thanks, Dutchies) and Connecticut.
+                  In 1664 New Amsterdam shifted to English control and that's where it all went downhill.
+              </div>
+            </div>
+          </div>
+        <p class="my-5">
+            That's it for now! Feel free to <a href="mailto:em@somethingreally.fun">drop me an e-mail</a> if you have something
+            to contribute to the list. The amount of interesting stuff to add really is almost unlimited! And I'm pretty
+            sure this stuff has to be updated from time to time so don't be afraid to tell me if something is horribly
+            out of date - I'd really appreciate it!
+        </p>
         </div>
     </div>
 {% endblock main_blog_body %}

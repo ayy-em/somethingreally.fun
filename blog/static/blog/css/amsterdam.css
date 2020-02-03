@@ -81,3 +81,7 @@
     text-align: center;
     width: auto;
 }
+
+.card-header h4 {
+    font-family: 'Lato', sans-serif;
+}
