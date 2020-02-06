@@ -12,13 +12,50 @@
 {% endblock main_head %}
 
 {% block main_content %}
-    <div class="textytext mx-auto my-auto p-2">
-        <img src="{% static 'blog/bunq_big_tight.png' %}" alt="bunq" id="bunq-image">
-        <div class="container-flex my-5">
-            Sign up for bunq now.<br>Enjoy banking 5 minutes later.
+    <div class="container" style="min-width: 100vh; padding: 0">
+        {% load static %}
+        <div class="row" style="height: 75vh; font-family: 'Montserrat', sans-serif;">
+            <div class="col-8 my-auto mx-auto text-center h-100">
+                <div class="row h-100 mx-auto">
+                    <p class="mx-auto mt-auto" style="font-size: 2.25rem; font-weight: bold">
+                        You never thought you'd enjoy banking
+                    </p>
+                    <ul class="text-justify mb-auto mt-3 mx-auto px-3">
+                        <li>Available in 30+ EU countries in 6 different languages. And thanks to bunq's European Banking
+                            Permit your money is 100% insured by the Dutch Deposit Guarantee Scheme.</li>
+                        <hr>
+                        <li>No bullshit fees: up to 3 cards (debit, maestro and credit) included in your subscription,
+                            free withdrawals at any ATM, disposable online cards and free bank transfers.</li>
+                        <li>Budget and save: interest on your day-to-day account paid out monthly, multiple sub-accounts
+                            for easy budgeting, Auto-Save feature, balance prediction, easy bill splitting and automatic
+                            payment categorization.</li>
+                        <li>Truly international: accepted everywhere with ZeroFX - pay without thinking about currency.
+                            Customer support in 10 different languages from within th app. Travel assistant and exchange
+                            rate calculator in-app.</li>
+                        <li>High-tech: powerful open API, state of the art fraud detection, top-notch security.</li>
+                        <hr>
+                        <li>Hassle-free sign up: just download the app. No calls, no branch visits.</li>
+                        <li>30 days of free trial. No commitment.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="row h-50">
+                    <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/" class="mt-auto mb-2" id="bunqbannerlink">
+                        <img src="{% static 'blog/bunq-botf.png' %}" alt="bunq" id="bunq-image" style="width: 100%; height: auto">
+                    </a>
+                </div>
+                <div class="row h-50">
+                    <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/?uid=3" class="mb-auto mt-2" id="bunqbannerlink">
+                        <img src="{% static 'blog/trees_planted.jpg' %}" alt="bunq banner here yo" style="height: auto; width: 100%;">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="container-flex">
-            <a href="http://www.bunq.com" class="button4">Join bunq. Be cool.</a>
+        <div class="row text-center">
+            <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/?uid=4" class="button4 mx-auto">
+                Sign up in 5 minutes.
+            </a>
         </div>
     </div>
 {% endblock main_content %}

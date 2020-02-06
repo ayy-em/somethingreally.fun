@@ -2,6 +2,7 @@ body {
     background: linear-gradient(-45deg, #7B68EE, #9400D3, #3d62f5);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
+        color: #eee;
 }
 
 @keyframes gradientBG {
@@ -16,31 +17,25 @@ body {
     }
 }
 
-.textytext {
-    color: #eee;
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-    text-align: center;
-}
 
 #bunq-image {
     max-width: 80vw;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
 a.button4 {
-    display: inline-block;
     padding: 0.3em 1.2em;
     border: 0.16em solid rgba(255,255,255,0.5);
     border-radius: 2em;
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 300;
+    font-size: x-large;
     color: #FFFFFF;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-    text-align:center;
     transition: font-size 2s, font-weight 2s;
+    font-family: 'Montserrat', sans-serif
 }
 
 .button4:hover {
@@ -62,7 +57,7 @@ a.button4 {
     );
     animation: slidebg 15s linear infinite, shake 0.5s;
     animation-iteration-count: infinite;
-    font-size: larger;
+    font-size: xx-large;
     font-weight: bolder;
 }
 
