@@ -1,8 +1,10 @@
+/*
 body {
     background: linear-gradient(-45deg, #7B68EE, #9400D3, #3d62f5);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-        color: #eee;
+    color: #eee;
+    margin: 0;
 }
 
 @keyframes gradientBG {
@@ -16,26 +18,209 @@ body {
         background-position: 0% 50%;
     }
 }
+*/
 
+html {
+    height: 100%;
+
+}
+
+body {
+    color: #fafafa;
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #78C542 50%, #D71925 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .65;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation: slide infinite;
+    background-image: linear-gradient(-60deg, #0D66FE 50%, #F1BE2B 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .35;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation: slide infinite;
+    background-image: linear-gradient(-60deg, #25BDB6 50%, #5E23C1 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .15;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+}
+
+#bunqcol {
+    background-color: rgba(0,0,0,0.9);
+    padding: 2rem 1.5rem 0.5rem 0.25rem;
+    border-radius: .5em;
+    box-shadow: 0 0 2rem rgba(0,0,0,1)
+}
+
+#content-main-container {
+    padding: 3vmin;
+    /*background-color: rgba(0,0,0,.5);
+    background-color: rgba(52,58,64,.5);
+    ;*/
+    box-sizing: border-box;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
 
 #bunq-image {
     max-width: 80vw;
     width: 60%;
     height: auto;
+    padding: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 2.5rem black;
+    background-color: rgba(255,255,255,0);
+}
+
+#bunq-image:hover {
+    animation: bunqspark 3s ease-in infinite;
+}
+
+#bunqtcimage:hover {
+    animation: babyshake 4s linear infinite 0s, shake infinite 1s;
+}
+
+@keyframes bunqspark {
+    0% {
+        box-shadow: 0 0 2.25rem black;
+    }
+    25% {
+        box-shadow: 0 0 1.95rem red;
+    }
+    33% {
+        box-shadow: 0 0 1.95rem #fafafa;
+    }
+    50% {
+        box-shadow: 0 0 2.05rem purple;
+    }
+    66% {
+        box-shadow: 0 0 1.975rem blueviolet;
+    }
+    75% {
+        box-shadow: 0 0 2.05rem lightblue;
+    }
+    100% {
+        box-shadow: 0 0 2.25rem yellowgreen;
+    }
+}
+
+#bunqtitle {
+    font-size: 3rem;
+    font-weight: 900;
+    transform: rotate(2deg);
+    background-color: orangered;
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bunqwords {
+    background-color: blue;
+    font-size: larger;
+    padding: 0.25rem;
+    font-weight: 900;
+}
+
+#bunqlist {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#bw {
+    background-color: yellow;
+    color: black;
+    transform: rotate(3deg);
+}
+
+#bwone {
+    background-color: green;
+    transform: rotate(-2deg);
+}
+
+#bwtwo {
+    background-color: red;
+    transform: rotate(4deg);
+}
+
+#bwtitle {
+    background-color: #5D23C2;
+    font-size: 3.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+@keyframes babyshake {
+    20% {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    60% {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+
+    }
+    80% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 a.button4 {
     padding: 0.3em 1.2em;
-    border: 0.16em solid rgba(255,255,255,0.5);
-    border-radius: 2em;
+    box-shadow: 0 0 2.5rem rgba(0,0,0,0.75), inset 0 0 12px rgba(255,255,255,0.2);
+    border: solid #fafafa 0.1rem;
+    border-radius: 10px;
     box-sizing: border-box;
     text-decoration: none;
-    font-weight: 300;
-    font-size: x-large;
-    color: #FFFFFF;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-    transition: font-size 2s, font-weight 2s;
-    font-family: 'Montserrat', sans-serif
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: black;
+    color: #fafafa;
+    text-shadow: 0 0.02em 0.02em rgba(255,255,255,0.35);
+    transition: font-size 0.1s, font-weight 0.1s;
 }
 
 .button4:hover {
@@ -55,29 +240,27 @@ a.button4 {
       #732982 100%,
       #E7484F 100%
     );
-    animation: slidebg 15s linear infinite, shake 0.5s;
+    animation: slidebg 15s linear infinite, shake alternate-reverse 1.5s;
     animation-iteration-count: infinite;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 @keyframes slidebg {
   to {
     background-position: 100vw;
   }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(1deg) scale(1.00); font-weight: 400; }
+  10% { transform: translate(-1px, -2px) rotate(-2deg); font-size: 2.10rem; }
+  20% { transform: translate(-2px, 0px) rotate(1deg) scale(1.025); color: #9400D3;}
+  30% { transform: translate(2px, 2px) rotate(2deg); font-weight: 600; }
+  40% { transform: translate(1px, -1px) rotate(-1deg) scale(0.985);  color: yellow }
+  50% { transform: translate(-1px, 2px) rotate(1deg); font-weight: 900; font-size: 2.1rem;}
+  60% { transform: translate(-3px, 1px) rotate(2deg) scale(1.015); color: black; font-size: 2.25rem;}
+  70% { transform: translate(1px, 2px) rotate(-2deg); font-weight: 700; font-size: 1.85rem;}
+  80% { transform: translate(-1px, -2px) rotate(0deg) scale(0.975); color: red; ; }
+  90% { transform: translate(1px, 2px) rotate(1deg); font-weight: 500; font-size: 2.05rem;}
+  100% { transform: translate(1px, -2px) rotate(-1deg) scale(1.00); color: green;}
 }
 

@@ -2,7 +2,6 @@
 
 {% block main_head %}
     {% load static %}
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'blog/css/gradient.css' %}">
     <meta name="title" content="bunq: Bank of The Free">
     <meta name="description" content="Help bunq revolutionize the banking industry and enjoy Europe's best bank! It only takes 5 minutes.">
@@ -12,50 +11,56 @@
 {% endblock main_head %}
 
 {% block main_content %}
-    <div class="container" style="min-width: 100vh; padding: 0">
-        {% load static %}
-        <div class="row" style="height: 75vh; font-family: 'Montserrat', sans-serif;">
-            <div class="col-8 my-auto mx-auto text-center h-100">
+    {% load static %}
+    <div class="bg"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="container" id="content-main-container">
+        <div class="row h-100" style="font-family: 'Montserrat', sans-serif;">
+            <div class="col-8 my-auto mx-auto text-center h-100" id="bunqcol">
                 <div class="row h-100 mx-auto">
-                    <p class="mx-auto mt-auto" style="font-size: 2.25rem; font-weight: bold">
-                        You never thought you'd enjoy banking
+                    <h1 class="mx-auto mt-auto" id="bunqtitle">
+                        Smart & Easy Banking
+                    </h1>
+                    <p class="mt-3 mb-1">
+                        Available in 30+ EU countries and 6 different languages. European Banking Permit means your
+                        money is 100% insured by the Dutch Deposit Guarantee Scheme.
                     </p>
-                    <ul class="text-justify mb-auto mt-3 mx-auto px-3">
-                        <li>Available in 30+ EU countries in 6 different languages. And thanks to bunq's European Banking
-                            Permit your money is 100% insured by the Dutch Deposit Guarantee Scheme.</li>
-                        <hr>
-                        <li>No bullshit fees: up to 3 cards (debit, maestro and credit) included in your subscription,
-                            free withdrawals at any ATM, disposable online cards and free bank transfers.</li>
-                        <li>Budget and save: interest on your day-to-day account paid out monthly, multiple sub-accounts
-                            for easy budgeting, Auto-Save feature, balance prediction, easy bill splitting and automatic
-                            payment categorization.</li>
-                        <li>Truly international: accepted everywhere with ZeroFX - pay without thinking about currency.
-                            Customer support in 10 different languages from within th app. Travel assistant and exchange
-                            rate calculator in-app.</li>
-                        <li>High-tech: powerful open API, state of the art fraud detection, top-notch security.</li>
-                        <hr>
-                        <li>Hassle-free sign up: just download the app. No calls, no branch visits.</li>
-                        <li>30 days of free trial. No commitment.</li>
+                    <ul class="my-0 text-justify">
+                        <li id="bunqlist"><strong class="bunqwords">No bullshit fees:</strong> up to 3 cards (debit, maestro and credit) included in subscription,
+                            any ATM with no fees, disposable online cards, free bank transfers, Dual PIN, iDEAL, SOFORT -
+                            everything you need, available 24/7 at no extra costs.</li>
+                        <li id="bunqlist"><strong class="bunqwords" id="bw">Budget and save:</strong> interest on your
+                            day-to-day account monthly, Auto-Save, multiple sub-accounts, balance prediction,
+                            easy bill splitting and spending insights.</li>
+                        <li id="bunqlist"><strong class="bunqwords" id="bwone">Truly international:</strong> accepted everywhere. ZeroFX - never think about currency.
+                            Support in 10 different languages. Travel assistant. Amazing community.</li>
+                        <li id="bunqlist"><strong class="bunqwords" id="bwtwo">High tech:</strong> neat open API, AI-powered fraud detection, top-notch security.</li>
                     </ul>
+                    <p class="my-2 mx-auto">
+                        Zero calls, zero paperwork and no branch visits. Ever.<br>
+                        Hassle-free banking with cutting edge technology. Just like it should be.<br>
+                        <strong class="bunqwords" id="bwtitle">bunq - Bank of The Free</strong>
+                    </p>
                 </div>
             </div>
-            <div class="col-4 text-center">
-                <div class="row h-50">
-                    <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/" class="mt-auto mb-2" id="bunqbannerlink">
-                        <img src="{% static 'blog/bunq-botf.png' %}" alt="bunq" id="bunq-image" style="width: 100%; height: auto">
+            <div class="col-4 my-auto text-center">
+                <div class="row">
+                    <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/" class="mb-5 mx-auto" id="bunqtcimage">
+                        <img src="{% static 'blog/travelcard_vert.png' %}" alt="bunq" id="bunq-image" style="width: 70%; height: auto">
                     </a>
                 </div>
-                <div class="row h-50">
-                    <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/?uid=3" class="mb-auto mt-2" id="bunqbannerlink">
-                        <img src="{% static 'blog/trees_planted.jpg' %}" alt="bunq banner here yo" style="height: auto; width: 100%;">
+                <div class="row text-center my-4">
+                    <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/?uid=4" class="button4 mx-auto">
+                        Join bunq
                     </a>
                 </div>
+                <!--div class="row h-30">
+                    <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/?uid=4" class="mt-4" id="bunqbannerlink">
+                        <img src="{% static 'blog/bunq-botf.png' %}" alt="bunq banner here yo" style="height: auto; width: 100%;">
+                    </a>
+                </div-->
             </div>
-        </div>
-        <div class="row text-center">
-            <a href="https://bunq.endtrk.com/PL4CJ3/225JFQ/?uid=4" class="button4 mx-auto">
-                Sign up in 5 minutes.
-            </a>
         </div>
     </div>
 {% endblock main_content %}
