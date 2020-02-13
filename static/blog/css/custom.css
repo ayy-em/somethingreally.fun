@@ -297,11 +297,12 @@ ul {
 }
 
 #contactmetext {
-    background-color: rgba(0,0,0,0.5);
+    background-color: #343A40;
+    opacity: 0.25;
     color: #fafafa;
     border-radius: 0.25rem;
     border: 0.1rem #343A40 solid;
-    padding: 3.5rem;
+    padding: 1.5rem;
 }
 
 #linkedin-badge-div {

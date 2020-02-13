@@ -2,15 +2,19 @@
 
 {% block main_blog_body %}
     <div class="container-flex p-0 m-0">
-        <h1>Amsterdam #LIVE</h1>
-        <p>Enjoy some sweet posts, fresh from my <a href="http://t.me/adam24live">Amsterdam #Live Telegram channel.</a>
-            <br>Current sub count = 801 brilliant people.</p>
-        {% comment %}
-            <p>There will be a lot of stuff here.</p>
-            <script async src="https://comments.app/js/widget.js?2" data-comments-app-website="M8tTx9zj" data-limit="5" data-color="7B68EE" data-dislikes="1" data-outlined="1" data-colorful="1"></script>
-        {% endcomment %}
-        {% for post in adam_posts %}
-        <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="{{ post.post_id }}" data-width="100%"></script>
-        {% endfor %}
+        <div class="row">
+            <h1>Amsterdam #LIVE</h1>
+            <p class="mt-3">
+                Enjoy some sweet posts, fresh from my <a href="http://t.me/adam24live">Amsterdam #Live Telegram channel.
+                </a> Current sub count is about 835 brilliant people or so.
+            </p>
+        </div>
+        <div class="row">
+            {% for post in adam_posts %}
+                <div class="mx-auto my-auto">
+                    <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="{{ post.post_id }}" data-width="300px" data-userpic="false"></script>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock main_blog_body %}

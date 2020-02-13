@@ -2,19 +2,61 @@
 
 {% block code_head %}
     <title>Version Control & Git</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        h2, h3, h4 {
+            margin: 2rem 1rem;
+        }
+        h1 {
+            margin-bottom: 2rem;
+        }
+    </style>
 {% endblock code_head %}
 
 
 {% block code_body %}
-    <h1>Version Control for total beginners</h1>
-    <p class="mt-3">Version control is a must-have tool in any coder's arsenal. What is it? Well, it's under
-        construction now, so you'll find out later.
+    <h1>Git and VCS for total beginners</h1>
+    <p class="mt-3">
+        Git is a must-have tool in any coder's arsenal. What is it? Well, Git is a
+        <a href="https://git-scm.com/about/free-and-open-source">free and open source</a> distributed version control
+        system. It's pretty easy to learn and it's one of the things you're expected to be familiar with as a coder.
+    </p>
+    <h3>
+        What is Version Control?
+    </h3>
+    <p>
+        So what is version control? Imagine two developers working on the same mobile app side-by-side. While one of
+        them works on implementing new designs for the in-app screens, the other one is fixing a sign-up bug. How do
+        they make it so that they can both work on the same piece of code without interrupting each other?
+        That's where version control comes into play. Both developers "clone" a repository (basically, a file drawer
+        containing the whole project) and create a separate "branch" (think of it as a detour) to work on.
+        Then, once the feature is fully done and working fine in that specific branch, all of the additions get
+        merged into the "master" branch. That way, the piece of code that might not be functional while still being
+        worked on will not disrupt the workflow for other developers working on the same app. At certain points in the
+        development cycle, all the developers working on the project merge their branches together, updating the "main"
+        branch and testing to see if there are any conflicts in the additional code submitted by their coworkers.
+    </p>
+    <p>
+        Apart from that, dev teams frequently introduce code reviews whenever someone requests to merge their local branch
+        (say, one specific to a new feature to be added in the next app update). More importantly, you always have the
+        full history of changes introduced and branches created/merged, which makes fixing bugs way easier.
+    </p>
+    <h3>
+        Why Git?
+    </h3>
+    <p>
+        Git has a lot of advantages over competing solutions. For example, being a <strong>distributed</strong> system
+        means that there is not a single "end-all-be-all" place for the full version history of the project you're working
+        on. Git's design implies that every developer's copy of the code is also a repository that contains the full
+        change history. And I'll totally update it later
     </p>
     <p class="my-2">
         Here is how to unset the passowrd saved for the current user.
     </p>
-    <p class="codeblock">git config --global --unset user.password</p>
-    <p class="my-2">
+    <pre><code>git config --global --unset user.password</code></pre>
+    <p class="mb-4">
         Wow, amazing stuff. I'll finish later
     </p>
 {% endblock code_body %}

@@ -29,6 +29,10 @@
 .anchorbaby:hover {
     color: #9400D3;
 }
+
+pre {
+    padding: 1rem;
+}
 /* GENERAL SHIT YO - END */
 
 /* RIGHT COLUMN - START */

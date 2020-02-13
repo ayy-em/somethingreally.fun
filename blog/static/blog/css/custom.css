@@ -202,13 +202,7 @@ ul {
   }
 }
 
-#toprightimg {
-    align-content: center;
-    height: 100%;
-    padding-bottom: 0;
-    padding-top: 0;
-    font-size: smaller;
-}
+/* NAVBAR - END */
 
 #blogmaincontent {
     min-height: 100px;
@@ -251,7 +245,6 @@ ul {
     border-color: #9400D3;
 }
 
-/* NAVBAR - END */
 /* SIDENAV - START */
 
 .sidenav {
