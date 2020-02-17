@@ -240,7 +240,7 @@ a.button4 {
       #732982 100%,
       #E7484F 100%
     );
-    animation: slidebg 20s ease-in-out infinite, shake ease-in-out 3s;
+    animation: slidebg 25s linear alternate, shake linear 1.5s;
     animation-iteration-count: infinite;
 }
 
@@ -251,16 +251,16 @@ a.button4 {
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(1deg) scale(1.00); font-weight: 400; }
-  10% { transform: translate(-1px, -2px) rotate(-2deg); font-size: 2.10rem; }
-  20% { transform: translate(-2px, 0px) rotate(1deg) scale(1.025); color: #9400D3;}
-  30% { transform: translate(2px, 2px) rotate(2deg); font-weight: 600; }
-  40% { transform: translate(1px, -1px) rotate(-1deg) scale(0.985);  color: yellow }
-  50% { transform: translate(-1px, 2px) rotate(1deg); font-weight: 900; font-size: 2.1rem;}
-  60% { transform: translate(-3px, 1px) rotate(2deg) scale(1.015); color: black; font-size: 2.25rem;}
-  70% { transform: translate(1px, 2px) rotate(-2deg); font-weight: 700; font-size: 1.85rem;}
-  80% { transform: translate(-1px, -2px) rotate(0deg) scale(0.975); color: red; ; }
-  90% { transform: translate(1px, 2px) rotate(1deg); font-weight: 500; font-size: 2.05rem;}
-  100% { transform: translate(1px, -2px) rotate(-1deg) scale(1.00); color: green;}
+  0% { transform: translate(1px, 1px) rotate(1deg) scale(1.0); }
+  10% { transform: translate(-1px, -2px) rotate(-2deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); color: #9400D3;}
+  30% { transform: translate(2px, 2px) rotate(2deg);}
+  40% { transform: translate(1px, -1px) rotate(-1deg); color: yellow; }
+  50% { transform: translate(-1px, 2px) rotate(1deg) scale(1.25); }
+  60% { transform: translate(-3px, 1px) rotate(2deg); color: black;}
+  70% { transform: translate(1px, 2px) rotate(-2deg); }
+  80% { transform: translate(-1px, -2px) rotate(0deg); color: red; }
+  90% { transform: translate(1px, 2px) rotate(1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg) scale(1.0); color: green;}
 }
 

@@ -6,55 +6,41 @@
 {% block main_content %}
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'blog/css/ams-map.css' %}">
-    <div class="container">
-        <div class="row mx-auto my-3">
-            <h1 style="text-align: center; margin: auto; font-weight: 500">Best of Amsterdam: The Map</h1>
+    <div class="container-fluid" id="ams-map-container">
+        <div class="row mx-auto my-2">
+            <h3 id="ams-map-title-div">Best of Amsterdam: The Map</h3>
         </div>
-        <div class="row my-2" style="height: 70vh">
+        <div class="row my-3 mx-auto p-0" style="height: 70vh; max-width: 90vw">
             <iframe class="ams-map" src="https://www.google.com/maps/d/u/0/embed?mid=190BDw4I_F7HRjIngm5zA5xH_nR10u5wX"></iframe>
         </div>
-        <div class="row my-3">
-            <div id="accordion" class="mx-auto">
-                <div class="card" id="ams-card-full">
+        <div class="row">
+            <div id="accordion" class="mx-auto my-2">
+                <div class="card">
                     <div class="card-header text-center" id="ams-headingOne">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" id="ams-map-contr" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Contribute to the map in under a minute
-                        </button>
-                      </h5>
+                          <button id="ams-map-contr" class="btn btn-link py-2" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Know a cool place that's not on this map?
+                          </button>
                     </div>
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
-                        <form class="px-4 py-3 justify-content-center">
-                            <p class="mb-4 mx-auto text-center">
-                                Contribute to this map in an amazing fashion by suggesting your favorite place. Totally anonymous!
+                        <form class="justify-content-center">
+                            <p class="mx-auto p-2 text-center">
+                                Send me a suggestion so I can add it. Totally anonymous!
                             </p>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="ams-map-inputGroup-sizing-default">Place I like</span>
-                                        </div>
-                                        <input type="text" class="form-control">
+                                <div class="input-group mb-3 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="ams-map-inputGroup-sizing-default">What</span>
                                     </div>
+                                    <input type="text" class="form-control">
                                 </div>
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="ams-map-inputGroup-sizing-default">Location</span>
-                                        </div>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input-group mb-3">
+                            <div class="input-group mb-3 w-100">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="ams-map-inputGroup-sizing-default">What makes it so great?</span>
+                                    <span class="input-group-text" id="ams-map-inputGroup-sizing-default">Where</span>
                                 </div>
                                 <input type="text" class="form-control">
                             </div>
-                            <div class="mx-auto text-center mb-4">
-                                <button type="submit" id="ams-map-send-suggestion" class="btn btn-primary">Submit!</button>
+                            <div class="mx-auto text-center mb-3">
+                                <button type="submit" id="ams-map-send-suggestion" class="btn btn-primary">Here you go</button>
                             </div>
                         </form>
                       </div>
