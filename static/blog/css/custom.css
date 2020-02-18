@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Domine', serif;
+    font-family: 'Arvo', serif;
 }
 
 main.container {
@@ -131,7 +131,7 @@ ul {
     height: 3rem;
     box-sizing: border-box;
     z-index: 3;
-    font-family: 'Domine', serif;
+    font-family: 'Arvo', serif;
     font-size: large;
 }
 
@@ -202,13 +202,7 @@ ul {
   }
 }
 
-#toprightimg {
-    align-content: center;
-    height: 100%;
-    padding-bottom: 0;
-    padding-top: 0;
-    font-size: smaller;
-}
+/* NAVBAR - END */
 
 #blogmaincontent {
     min-height: 100px;
@@ -251,7 +245,6 @@ ul {
     border-color: #9400D3;
 }
 
-/* NAVBAR - END */
 /* SIDENAV - START */
 
 .sidenav {
@@ -297,12 +290,11 @@ ul {
 }
 
 #contactmetext {
-    background-color: #343A40;
-    opacity: 0.25;
+    background-color: rgba(0,0,0,0.5);
     color: #fafafa;
     border-radius: 0.25rem;
     border: 0.1rem #343A40 solid;
-    padding: 1.5rem;
+    padding: 3.5rem;
 }
 
 #linkedin-badge-div {

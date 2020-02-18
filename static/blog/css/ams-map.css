@@ -1,16 +1,15 @@
 /* ams map */
 
-/* BUTTON SEND */
+/* BUTTONS SEND AND GO BACK */
 
 #ams-map-send-suggestion {
-    margin-left: auto;
-    margin-right: auto;
     background-color: rgba(52,58,64,.05);
     padding: .5rem 1rem .5rem 1rem;
     border: 1px solid #343A40;
     color: #343A40;
     transition: color;
     box-shadow: 1px 1px 1px 1px #343A40;
+    font-family: 'Arvo', serif;
     transition-property: border-bottom-color, border-top-color, border-left-color, border-right-color;
     transition-duration: .5s;
 }
@@ -20,7 +19,51 @@
     border-color: #9400D3;
 }
 
-/* BUTTON SEND - END */
+#accordion {
+    box-shadow: 1px 1px 1px 1px #343A40;
+    border-radius: 0.5rem;
+}
+
+#gobackbutton {
+    padding: .5rem 1rem .5rem 1rem;
+    color: #343A40;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+    font-weight: 600;
+    background: #fafafa;
+    border: none;
+}
+
+#gobackbutton:hover {
+    color: #9400D3;
+    text-decoration: none;
+}
+
+#gobackbutton:focus {
+    outline: none;
+}
+
+#gobackdiv {
+    padding: .75rem 1.25rem;
+    background-color: #fafafa;
+    border: 1px solid rgba(52,58,64,.125);
+    box-shadow: 1px 1px 1px 1px #343A40;
+    border-radius: 0.5rem;
+}
+
+#ams-map-contr-button {
+    color: #343A40;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+    font-weight: 600;
+}
+
+#ams-map-contr-button:hover {
+    color: #9400D3;
+    text-decoration: none;
+}
+
+/* BUTTONS SEND AND GO BACK - END */
 
 body {
     background: url("../ams/amsoldmap.jpg") no-repeat center;
@@ -28,31 +71,14 @@ body {
     height: 100%;
 }
 
-#accordion {
-    box-shadow: 1px 1px 1px 1px #343A40;
-}
-
 #ams-map-title-div {
     border-radius: 0.5rem;
     border: 0.1rem solid #343A40;
     box-shadow: 1px 1px 1px 1px #343A40;
-    background: rgba(255,255,255,0.9);
+    background: #343A40;
+    color: #fafafa;
     margin: auto;
-    padding: 0.5rem 1rem;
-}
-
-#ams-map-contr {
-    color: #343A40;
-    text-decoration: none;
-}
-
-#ams-map-contr:hover {
-    color: #9400D3;
-    text-decoration: none;
-}
-
-#ams-map-inputGroup-sizing-default {
-    color: #343A40;
+    padding: 1rem 2rem;
 }
 
 .ams-map {

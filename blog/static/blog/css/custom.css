@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Domine', serif;
+    font-family: 'Arvo', serif;
 }
 
 main.container {
@@ -131,7 +131,7 @@ ul {
     height: 3rem;
     box-sizing: border-box;
     z-index: 3;
-    font-family: 'Domine', serif;
+    font-family: 'Arvo', serif;
     font-size: large;
 }
 
