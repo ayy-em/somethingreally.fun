@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main_head %}
+    <title>FACEIT: CSGO PUG Stats Checker</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/csgo.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+{% endblock main_head %}
+
+{% block main_content %}
+    <div class="row mx-auto my-auto" id="csgosearch">
+        <h1 class="my-auto pr-3">
+            Game Link:
+        </h1>
+        <form method="post" id="formforalink">
+            {% csrf_token %}
+            {{ form }}
+            <!--input type="text" id="inputurl" name="fname"-->
+            <button class="gobutton" type="submit">
+                GO
+            </button>
+        </form>
+    </div>
+{% endblock main_content %}

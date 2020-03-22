@@ -1,5 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .forms import LinkForm
+from .myutils import csgo
 
 adam_posts = []
 for i in reversed(range(296, 500)):
@@ -24,6 +26,31 @@ def hire_me(request):
 
 def bunq(request):
     return render(request, 'blog/bunq.html')
+
+
+# ----------> CS GO
+def csgo_stats(request):
+    if request.method == 'POST':
+        print('got post request here boi')
+        form = LinkForm(request.POST)
+        if form.is_valid():
+            game_data = csgo.get_match_stats(form.cleaned_data['link_to_game'])
+            match_started_at = csgo.epoch_to_string(game_data['started_at'])
+            results = {
+                'game_data': game_data,
+                'match_start': match_started_at
+            }
+            return csgo_results(request, results)
+    form = LinkForm()
+    return render(request, 'blog/csgo_stats.html', {'form': form})
+
+
+def csgo_results(request, results):
+    game_results = {
+        'results': results
+    }
+    return render(request, 'blog/csgo_results.html', game_results)
+# ----------> CS GO
 
 
 def blog_home(request):

@@ -7,9 +7,10 @@ urlpatterns = [
     path('', views.hello, name='hello-home'),
     path('full-metal-rat/', views.rat, name='hello-rat'),
     path('test/', views.test, name='hello-test'),
-    # contacts
+    # one-offs
     path('bunq/', views.bunq, name='bunq'),
     path('contact/', views.contact, name='contact'),
+    path('faceit/', views.csgo_stats, name='csgo-stats'),
     path('hire-me/', views.hire_me, name='hire-me'),
     # blog
     path('blog/', views.blog_home, name='blog-welcome'),

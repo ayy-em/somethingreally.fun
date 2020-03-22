@@ -3,6 +3,7 @@
 {% block main_head %}
     {% load static %}
     <title>Contact me</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/wordflip.css' %}">
     <meta name="title" content="Contact me, go ahead">
     <meta name="description" content="When a LinkedIn link is just not enough.">
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -11,17 +12,43 @@
 {% block main_content %}
     <main role="main" class="container-fluid h-100 m-0 p-0" id="contactmebg">
         <div class="row justify-content-center" id="contactmemid">
-            <div class="col d-none d-lg-inline ml-auto mr-2">
-                <div class="container" id="linkedin-badge-div">
+            <div class="col d-none d-lg-inline my-auto">
+                <div class="container float-right my-auto" id="linkedin-badge-div">
                     <div class="LI-profile-badge p-2" data-version="v1" data-size="large" style="border-radius: 0.3rem;" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="mironove"><a class="LI-simple-link" href='https://nl.linkedin.com/in/mironove/en?trk=profile-badge'>Evgeny Mironov</a></div>
                 </div>
             </div>
-            <div class="col mx-2" id="contactmetext">
-                <h1>Contact me</h1>
-                <p class="pt-3">Have an amazing idea? A collaboration in mind? Want to propose something really fun? Feel free to <a href="https://t.me/ayy_yo" class="purple-link">reach out to me on Telegram.</a></p>
-                <p>Is it something work-related? Welcome to <a href="https://www.linkedin.com/in/mironove/" class="purple-link">my LinkedIn page</a>. That is, unless you want to sell me something.</p>
-                <p>You can also use the buttons in the footer to get in touch via social networks. Or simply <a href="mailto:em@somethingreally.fun" class="purple-link">send me an e-mail.</a></p>
-                <p>Ciao!</p>
+            <div class="col mr-auto" id="contactmetext">
+                <!--div class="content__container">
+                    <p class="content__container__text">
+                      Contact me for
+                    </p>
+                    <ul class="content__container__list">
+                      <li class="content__container__list__item">world !</li>
+                      <li class="content__container__list__item">bob !</li>
+                      <li class="content__container__list__item">users !</li>
+                      <li class="content__container__list__item">everybody !</li>
+                    </ul>
+                </div-->
+                <p class="pt-3">
+                    Have an amazing idea? A collaboration in mind? Want to propose something really fun? Feel free to
+                    <a href="https://t.me/ayy_yo" class="purple-link">reach out to me on Telegram.</a>
+                </p>
+                <p>
+                    Is it something work-related? Welcome to <a href="https://www.linkedin.com/in/mironove/" class="purple-link">
+                    my LinkedIn page.</a> That is, unless you want to sell me something. If you're looking to schedule
+                    a quick intro call for a B2B partnership, please use
+                    <!-- Calendly link widget begin -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/evgeny-bunq/intro'});return false;">this calendly link.</a>
+                </p>
+                <p>
+                    You can also use the buttons in the footer to get in touch via social networks. Or simply
+                    <a href="mailto:em@somethingreally.fun" class="purple-link">send me an e-mail.</a>
+                </p>
+                <p>
+                    Ciao!
+                </p>
             </div>
         </div>
     </main>
