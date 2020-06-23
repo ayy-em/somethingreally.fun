@@ -17,6 +17,13 @@ venv/
 .venv/
 env/
 
+bash_cmd_term_venv.txt
+cloud_sql_proxy.exe
+app.yaml
+blogproject/settings.py
+jm-blog-django-09faa976d781.json
+stuff.txt
+
 # Python pycache:
 __pycache__/
 # Ignored by the build system
