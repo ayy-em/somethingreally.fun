@@ -10,6 +10,7 @@ urlpatterns = [
     # one-offs
     path('bunq/', views.bunq, name='bunq'),
     path('contact/', views.contact, name='contact'),
+    path('stuff/', views.stuff, name='stuff'),
     path('faceit/', views.csgo_stats, name='csgo-stats'),
     path('hire-me/', views.hire_me, name='hire-me'),
     # blog

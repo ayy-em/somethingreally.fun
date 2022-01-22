@@ -20,6 +20,10 @@ def test(request):
     return render(request, 'blog/testing_stuff.html')
 
 
+def stuff(request):
+    return render(request, 'blog/stuff.html')
+
+
 def hire_me(request):
     return render(request, 'blog/hire-me.html')
 

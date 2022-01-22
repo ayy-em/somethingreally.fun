@@ -12,6 +12,7 @@ __pycache__/
 # my shit
 bash_cmd_term_venv.txt
 cloud_sql_proxy.exe
+cloud_sql_proxy_x64.exe
 app.yaml
 jm-blog-django-09faa976d781.json
 stuff.txt
@@ -134,3 +135,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/cloud_sql_proxy_x64.exe

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block main_head %}
+    {% load static %}
+    <title>Stuff</title>
+    <meta name="title" content="Stuff and things">
+    <meta name="description" content="I don't know why you're here.">
+{% endblock main_head %}
+
+{% block main_content %}
+    <main role="main" class="container d-flex flex-column h-100">
+        <div class="row my-3">
+            <div class="col">
+                <h2>
+                    Hello, this is a graveyard of unfinished (and sometimes finished) stuff
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="my-2">
+                    Pages on this website
+                </p>
+                <ul>
+                    <li><a href="/code/">Code territory</a> - A bunch of coding tutorials I was about to write (but then
+                        realized it's actually pretty boring)
+                    </li>
+                    <li><a href="/blog/">Blog zone</a> - I'll stick to Telegram channels</li>
+                    <li><a href="/amsterdam/">Amsterdam</a> - I'm definitely gonna actually finish at some point</li>
+                    <li><a href="/hire-me/">My interactive CV</a> - yes, I can indeed do basic CSS, impressive, huh?
+                    </li>
+                    <li><a href="/bunq/">bunq promo page</a> - we were testing things at work, okay?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="my-2">
+                    Just some fun stuff
+                </p>
+                <ul>
+                    <li><a href="/full-metal-rat/">Full metal rat</a> - New Year's 2020 was wild <3 </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+{% endblock main_content %}

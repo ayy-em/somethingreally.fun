@@ -19,6 +19,7 @@ env/
 
 bash_cmd_term_venv.txt
 cloud_sql_proxy.exe
+cloud_sql_proxy_x64.exe
 app.yaml
 blogproject/settings.py
 jm-blog-django-09faa976d781.json
