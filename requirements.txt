@@ -50,7 +50,7 @@ retry-decorator==1.1.1
 rsa==4.7
 six==1.14.0
 SocksiPy-branch==1.1
-sqlparse==0.3.0
+sqlparse==0.4.4
 urllib3==1.26.5
 virtualenv==20.0.23
 zipp==3.1.0
