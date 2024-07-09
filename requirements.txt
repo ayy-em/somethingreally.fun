@@ -53,4 +53,4 @@ SocksiPy-branch==1.1
 sqlparse==0.3.0
 urllib3==1.26.5
 virtualenv==20.0.23
-zipp==3.1.0
+zipp==3.19.1
